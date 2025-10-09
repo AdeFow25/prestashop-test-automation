@@ -11,6 +11,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@playwright/test": "^1.56.0"
+    "@playwright/test": "^1.56.0",
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3"
   }
 }
