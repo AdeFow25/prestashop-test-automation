@@ -34,7 +34,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium, firefox, webkit]
+        browser: [chromium, msedge]
         
     steps:
     - uses: actions/checkout@v4
@@ -48,7 +48,7 @@ jobs:
       run: npm ci
       
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps ${{ matrix.browser }}
+      run: npx playwright install --with-deps chromium msedge
       
     - name: Run Playwright tests
       run: |
@@ -190,7 +190,7 @@ jobs:
           
           ### Test Details
           - **Test Suite:** ${{ github.event.inputs.test_suite || 'all' }}
-          - **Browsers Tested:** Chrome, Firefox, Safari
+          - **Browsers Tested:** Chrome (Chromium), Microsoft Edge
           - **Test Environment:** PrestaShop Demo (https://demo.prestashop.com)
           
           ### Results Summary

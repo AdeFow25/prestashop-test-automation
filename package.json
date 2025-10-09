@@ -4,7 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:chrome": "playwright test --project=chromium",
+    "test:edge": "playwright test --project=msedge",
+    "codegen": "playwright codegen https://demo.prestashop.com/#/en/front",
+    "codegen:chrome": "playwright codegen --browser=chromium https://demo.prestashop.com/#/en/front",
+    "codegen:edge": "playwright codegen --browser=msedge https://demo.prestashop.com/#/en/front",
+    "codegen:mobile": "playwright codegen --device='iPhone 12' https://demo.prestashop.com/#/en/front",
+    "codegen:tablet": "playwright codegen --device='iPad Pro' https://demo.prestashop.com/#/en/front",
+    "codegen:checkout": "playwright codegen https://demo.prestashop.com/#/en/front --save-as=tests/generated-checkout.spec.ts",
+    "codegen:search": "playwright codegen https://demo.prestashop.com/#/en/front --save-as=tests/generated-search.spec.ts",
+    "codegen:demo": "node scripts/codegen-demo.js",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install"
   },
   "keywords": [],
   "author": "",
