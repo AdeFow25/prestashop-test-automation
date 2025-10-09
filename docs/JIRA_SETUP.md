@@ -2,6 +2,8 @@
 
 This guide explains how to configure GitHub Actions to automatically update Jira when test automation triggers occur.
 
+> **📋 For Complete Test Management:** See [JIRA_XRAY_SETUP.md](./JIRA_XRAY_SETUP.md) for comprehensive Jira + Xray integration with structured test execution tracking.
+
 ## Overview
 
 The GitHub Actions workflow is configured to automatically:
