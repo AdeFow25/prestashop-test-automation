@@ -35,104 +35,69 @@ The integration provides:
 2. Click **Create API token**
 3. Copy token for GitHub secrets
 
-## Xray Setup
+## Xray Integration with Existing Jira Structure
 
-### 1. Install Xray Add-on
-1. Go to **Jira Administration** → **Manage apps**
-2. Search and install **"Xray Test Management for Jira"**
-3. Complete licensing setup
+### Using Your Existing User Stories
+The current integration uses your **existing Jira user stories** as test cases, eliminating the need to create separate Xray test cases. This provides:
 
-### 2. Create Xray API Credentials
-1. Go to **Xray Settings** → **API Keys**
-2. Create new API key pair:
-   - **Client ID**: Copy for secrets
-   - **Client Secret**: Copy for secrets
-3. Note Xray base URL (usually `https://xray.cloud.getxray.app`)
+- **Seamless Integration**: Direct connection between requirements and test execution
+- **No Duplication**: User stories serve as both requirements and test cases
+- **Immediate Value**: Works with your existing Jira structure
+- **Full Traceability**: From epic → user story → test execution
 
-### 3. Create Test Structure
+### Test Execution Mapping
+Your existing user stories will be tracked in Xray as follows:
 
-#### Test Plan
-```
-Title: PrestaShop Automated Test Plan
-Key: PRESTA-TP-001
-Description: Comprehensive test plan for PrestaShop demo automation
-```
+| Epic | User Story | Test Area | Jira Key |
+|------|------------|-----------|----------|
+| Homepage and Navigation Testing | Homepage Load and Header Elements | Homepage validation | PRESTA-2 |
+| Homepage and Navigation Testing | Category Navigation | Navigation testing | PRESTA-3 |
+| Product Search Testing | Basic Product Search | Search functionality | PRESTA-5 |
+| Product Search Testing | Empty Search Results | Edge case testing | PRESTA-6 |
+| Shopping Cart Management | Add Products to Cart | Cart functionality | PRESTA-11 |
+| Shopping Cart Management | Cart Operations | Cart management | PRESTA-12 |
+| Checkout Process | Guest Checkout Flow | Guest checkout | PRESTA-17 |
+| Checkout Process | Registered User Checkout | User checkout | PRESTA-18 |
+| User Registration and Authentication | New User Registration | Registration testing | PRESTA-14 |
+| User Registration and Authentication | User Login Process | Authentication testing | PRESTA-15 |
+| Error Handling and Edge Cases | Form Validation | Validation testing | PRESTA-23 |
+| Error Handling and Edge Cases | Browser Compatibility | Cross-browser testing | PRESTA-24 |
 
-#### Test Cases
-Create these test cases in Xray:
-
-1. **Homepage Navigation Test**
-   - Key: `PRESTA-T-001`
-   - Type: Automated
-   - Description: Validate homepage navigation and product discovery
-
-2. **Product Search Test**
-   - Key: `PRESTA-T-002`
-   - Type: Automated
-   - Description: Test product search and filtering functionality
-
-3. **Shopping Cart Test**
-   - Key: `PRESTA-T-003`
-   - Type: Automated
-   - Description: Validate cart operations and management
-
-4. **Checkout Flow Test**
-   - Key: `PRESTA-T-004`
-   - Type: Automated
-   - Description: Test complete checkout process with iframe support
-
-5. **Authentication Test**
-   - Key: `PRESTA-T-005`
-   - Type: Automated
-   - Description: Validate user authentication scenarios
-
-6. **Error Handling Test**
-   - Key: `PRESTA-T-006`
-   - Type: Automated
-   - Description: Test error handling and resilience
-
-7. **Integration Test**
-   - Key: `PRESTA-T-007`
-   - Type: Automated
-   - Description: Validate demo utilities and framework integration
-
-8. **Responsive Design Test**
-   - Key: `PRESTA-T-008`
-   - Type: Automated
-   - Description: Test responsive design and cross-browser compatibility
+### Simplified Xray Setup
 
 ## GitHub Secrets Configuration
 
-### Required Secrets
+### Required Secrets (Simplified)
 Go to: `https://github.com/YOUR_USERNAME/prestashop-test-automation/settings/secrets/actions`
 
-#### Jira Secrets
+#### Jira Secrets (4 secrets)
 ```
-JIRA_BASE_URL=https://your-domain.atlassian.net
-JIRA_USER_EMAIL=your-email@domain.com
+JIRA_BASE_URL=https://adefowokan.atlassian.net
+JIRA_USER_EMAIL=adeolufowokan@gmail.com
 JIRA_API_TOKEN=your-jira-api-token
 JIRA_PROJECT_KEY=PRESTA
 ```
 
-#### Xray Secrets
+#### Xray Secrets (3 secrets - Optional for Enhanced Reporting)
 ```
 XRAY_BASE_URL=https://xray.cloud.getxray.app
-XRAY_CLIENT_ID=your-xray-client-id
-XRAY_CLIENT_SECRET=your-xray-client-secret
-XRAY_TEST_PLAN_KEY=PRESTA-TP-001
+XRAY_CLIENT_ID=your-xray-client-id (if you want enhanced Xray features)
+XRAY_CLIENT_SECRET=your-xray-client-secret (if you want enhanced Xray features)
 ```
 
-#### Xray Test Keys
-```
-XRAY_HOMEPAGE_TEST_KEY=PRESTA-T-001
-XRAY_SEARCH_TEST_KEY=PRESTA-T-002
-XRAY_CART_TEST_KEY=PRESTA-T-003
-XRAY_CHECKOUT_TEST_KEY=PRESTA-T-004
-XRAY_AUTH_TEST_KEY=PRESTA-T-005
-XRAY_ERROR_TEST_KEY=PRESTA-T-006
-XRAY_INTEGRATION_TEST_KEY=PRESTA-T-007
-XRAY_RESPONSIVE_TEST_KEY=PRESTA-T-008
-```
+### Immediate Benefits with Minimal Setup
+With just the **4 Jira secrets**, you get:
+- ✅ Automatic Jira issue creation for test executions
+- ✅ Test results linked to your existing user stories
+- ✅ Complete traceability from epics to test results
+- ✅ Status updates and comprehensive reporting
+
+### Optional Xray Enhancement
+Adding the **3 Xray secrets** provides:
+- 📊 Advanced test execution dashboards
+- 📈 Test trend analysis and reporting
+- 🔗 Enhanced evidence attachment
+- 📋 Structured test management features
 
 ## Workflow Integration Features
 
