@@ -2,6 +2,19 @@ require('dotenv').config();
 const axios = require('axios');
 
 class JiraIntegration {
+  async linkTestToStory(testKey, storyKey) {
+    // Xray Test Coverage API endpoint
+    const url = `${this.baseURL}/rest/raven/1.0/api/test/${testKey}/cover`;
+    try {
+      // Link test to story
+      await axios.post(url, { issues: [storyKey] }, { headers: this.headers });
+      console.log(`🔗 Linked Xray Test ${testKey} to User Story ${storyKey}`);
+      return true;
+    } catch (error) {
+      console.error(`❌ Failed to link Xray Test ${testKey} to User Story ${storyKey}:`, error.response?.data || error.message);
+      return false;
+    }
+  }
   constructor() {
     this.baseURL = process.env.JIRA_BASE_URL;
     this.email = process.env.JIRA_EMAIL;
@@ -67,8 +80,8 @@ class JiraIntegration {
   async importTestScenarios() {
     console.log('📋 Starting import of PrestaShop test scenarios...');
     
-    // Test scenarios data based on validated PrestaShop test plan
-    const epics = [
+  // Test scenarios data based on validated PrestaShop test plan
+  const userStories = [
       {
         name: 'Homepage and Navigation Testing',
         description: 'Test homepage functionality, header elements, and category navigation features',
@@ -200,23 +213,23 @@ class JiraIntegration {
     ];
 
     try {
-      // Use project-specific issue type IDs
-      const epicTypeId = '10070'; // Epic for PRESTA project
-      const storyTypeId = '10069'; // Story for PRESTA project
+      // Use project-specific issue type IDs (update these to match your Jira/Xray instance)
+      const storyTypeId = '10001'; // Story for PRESTA project
+      const testTypeId = '10007'; // Xray Test for PRESTA project
 
-      console.log(`📝 Using Epic type: ${epicTypeId}, Story type: ${storyTypeId}`);
+      console.log(`📝 Using Story type: ${storyTypeId}, Test type: ${testTypeId}`);
 
       let createdCount = 0;
 
-      // Create epics and stories
-      for (const epic of epics) {
-        console.log(`\n🎯 Creating Epic: ${epic.name}`);
-        
-        // Create Epic
-        const epicData = {
+      // Create user stories and Xray test cases
+      for (const userStory of userStories) {
+        console.log(`\n🎯 Creating User Story: ${userStory.name}`);
+
+        // Create User Story (was Epic)
+        const storyData = {
           fields: {
             project: { key: this.projectKey },
-            summary: epic.name,
+            summary: userStory.name,
             description: {
               type: "doc",
               version: 1,
@@ -226,29 +239,29 @@ class JiraIntegration {
                   content: [
                     {
                       type: "text",
-                      text: epic.description
+                      text: userStory.description
                     }
                   ]
                 }
               ]
             },
-            issuetype: { id: epicTypeId },
+            issuetype: { id: storyTypeId },
             labels: ['testing', 'automation', 'prestashop']
           }
         };
 
-        const createdEpic = await this.createIssue(epicData);
-        console.log(`✅ Epic created: ${createdEpic.key}`);
+        const createdStory = await this.createIssue(storyData);
+        console.log(`✅ User Story created: ${createdStory.key}`);
         createdCount++;
 
-        // Create Stories under this Epic
-        for (const story of epic.stories) {
-          console.log(`📖 Creating Story: ${story.summary}`);
-          
-          const storyData = {
+        // Create Xray Test cases (was Stories)
+        for (const testCase of userStory.stories) {
+          console.log(`📖 Creating Xray Test Case: ${testCase.summary}`);
+
+          const testData = {
             fields: {
               project: { key: this.projectKey },
-              summary: story.summary,
+              summary: testCase.summary,
               description: {
                 type: "doc",
                 version: 1,
@@ -258,30 +271,23 @@ class JiraIntegration {
                     content: [
                       {
                         type: "text",
-                        text: story.description
+                        text: testCase.description
                       }
                     ]
                   }
                 ]
               },
-              issuetype: { id: storyTypeId },
-              labels: ['testing', 'automation'],
-              // Link to Epic using Epic Link field
-              customfield_10014: createdEpic.key // Epic Link field (may vary by instance)
+              issuetype: { id: testTypeId },
+              labels: ['testing', 'automation']
             }
           };
 
-          try {
-            const createdStory = await this.createIssue(storyData);
-            console.log(`✅ Story created: ${createdStory.key}`);
-            createdCount++;
-          } catch (error) {
-            // Try without Epic Link if custom field fails
-            delete storyData.fields.customfield_10014;
-            const createdStory = await this.createIssue(storyData);
-            console.log(`✅ Story created: ${createdStory.key} (without epic link)`);
-            createdCount++;
-          }
+          const createdTest = await this.createIssue(testData);
+          console.log(`✅ Xray Test Case created: ${createdTest.key}`);
+          createdCount++;
+
+          // Link Xray Test to User Story
+          await this.linkTestToStory(createdTest.key, createdStory.key);
         }
       }
 

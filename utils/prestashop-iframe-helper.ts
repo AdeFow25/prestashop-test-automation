@@ -17,22 +17,46 @@ export class PrestaShopIframeHelper {
    * Initialize connection to the PrestaShop store iframe
    */
   async initializeStoreFrame(): Promise<boolean> {
-    try {
-      // Wait for the main iframe to be available
-      await this.page.waitForSelector('iframe[name="framelive"]', { timeout: 10000 });
-      
-      this.storeFrame = this.page.frameLocator('iframe[name="framelive"]');
-      
-      // Verify the frame is accessible
-      const frameBody = this.storeFrame.locator('body');
-      await frameBody.waitFor({ state: 'visible', timeout: 10000 });
-      
-      console.log('✅ Store iframe initialized successfully');
-      return true;
-    } catch (error) {
-      console.log('⚠️ Store iframe not available, using fallback approach');
-      return false;
+    // Try multiple selectors for robustness
+    const selectors = [
+      'iframe[name="framelive"]',
+      'iframe#framelive',
+      'iframe',
+    ];
+    const maxRetries = 5;
+    const retryDelay = 4000;
+    for (const selector of selectors) {
+      for (let attempt = 1; attempt <= maxRetries; attempt++) {
+        try {
+          await this.page.waitForSelector(selector, { timeout: 20000 });
+          this.storeFrame = this.page.frameLocator(selector);
+          // Verify the frame is accessible
+          const frameBody = this.storeFrame.locator('body');
+          await frameBody.waitFor({ state: 'visible', timeout: 20000 });
+          console.log(`✅ Store iframe initialized with selector: ${selector} (attempt ${attempt})`);
+          return true;
+        } catch (error) {
+          console.log(`Retry ${attempt} failed for selector: ${selector}`);
+          await this.page.waitForTimeout(retryDelay);
+        }
+      }
     }
+    // If all selectors fail, log available iframes for debugging
+    const allIframes = await this.page.locator('iframe').all();
+    const iframeCount = allIframes.length;
+    if (iframeCount > 0) {
+      for (let i = 0; i < iframeCount; i++) {
+        const iframe = allIframes[i];
+        const name = await iframe.getAttribute('name');
+        const id = await iframe.getAttribute('id');
+        const src = await iframe.getAttribute('src');
+        console.log(`Found iframe [${i}]: name='${name}', id='${id}', src='${src}'`);
+      }
+    } else {
+      console.log('No iframes found on the page.');
+    }
+    console.log('⚠️ Store iframe not available with any known selector after retries.');
+    return false;
   }
 
   /**
