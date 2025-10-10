@@ -34,7 +34,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium, msedge]
+  browser: [chromium, "Microsoft Edge"]
         
     steps:
     - uses: actions/checkout@v4
