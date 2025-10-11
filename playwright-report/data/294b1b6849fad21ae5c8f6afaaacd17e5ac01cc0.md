@@ -34,13 +34,13 @@
           - generic [ref=f1e6]:
             - generic:
               - link "Contact us" [ref=f1e10] [cursor=pointer]:
-                - /url: https://educated-vase.demo.prestashop.com/en/contact-us
+                - /url: https://hysterical-rake.demo.prestashop.com/en/contact-us
               - generic [ref=f1e11]:
                 - button "Language dropdown" [ref=f1e15]:
                   - text: English
                   - generic [ref=f1e16] [cursor=pointer]: 
                 - link " Sign in" [ref=f1e19] [cursor=pointer]:
-                  - /url: https://educated-vase.demo.prestashop.com/en/login?back=https%3A%2F%2Feducated-vase.demo.prestashop.com%2Fen%2F%3Fid_module_showcased%3Dundefined
+                  - /url: https://hysterical-rake.demo.prestashop.com/en/login?back=https%3A%2F%2Fhysterical-rake.demo.prestashop.com%2Fen%2F%3Fid_module_showcased%3Dundefined
                   - generic [ref=f1e20]: 
                   - text: Sign in
                 - generic [ref=f1e23]:
@@ -49,19 +49,19 @@
         - generic [ref=f1e27]:
           - heading "PrestaShop" [level=1] [ref=f1e29]:
             - link "PrestaShop" [ref=f1e30] [cursor=pointer]:
-              - /url: https://educated-vase.demo.prestashop.com/en/
+              - /url: https://hysterical-rake.demo.prestashop.com/en/
               - img "PrestaShop" [ref=f1e31]
           - generic [ref=f1e32]:
             - list [ref=f1e34]:
               - listitem [ref=f1e35]:
                 - link "Clothes" [ref=f1e36] [cursor=pointer]:
-                  - /url: https://educated-vase.demo.prestashop.com/en/3-clothes
+                  - /url: https://hysterical-rake.demo.prestashop.com/en/3-clothes
               - listitem [ref=f1e37]:
                 - link "Accessories" [ref=f1e38] [cursor=pointer]:
-                  - /url: https://educated-vase.demo.prestashop.com/en/6-accessories
+                  - /url: https://hysterical-rake.demo.prestashop.com/en/6-accessories
               - listitem [ref=f1e39]:
                 - link "Art" [ref=f1e40] [cursor=pointer]:
-                  - /url: https://educated-vase.demo.prestashop.com/en/9-art
+                  - /url: https://hysterical-rake.demo.prestashop.com/en/9-art
             - generic [ref=f1e42]:
               - generic [ref=f1e43]: search
               - status [ref=f1e44]
@@ -72,15 +72,15 @@
         - generic [ref=f1e51]:
           - generic [ref=f1e52]:
             - listbox "Carousel container" [ref=f1e53]:
-              - option [ref=f1e54]:
-                - link [ref=f1e55] [cursor=pointer]:
+              - option "Sample 1 EXCEPTEUR OCCAECAT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit" [ref=f1e54]:
+                - link "Sample 1 EXCEPTEUR OCCAECAT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit" [ref=f1e55] [cursor=pointer]:
                   - /url: https://www.prestashop-project.org?utm_source=back-office&utm_medium=v17_homeslider&utm_campaign=back-office-EN&utm_content=download
-                  - figure [ref=f1e56]:
-                    - img [ref=f1e57]
+                  - figure "Sample 1 EXCEPTEUR OCCAECAT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit" [ref=f1e56]:
+                    - img "sample-1" [ref=f1e57]
                     - generic [ref=f1e58]:
-                      - heading [level=2] [ref=f1e59]: Sample 2
+                      - heading "Sample 1" [level=2] [ref=f1e59]
                       - generic [ref=f1e60]:
-                        - heading [level=3] [ref=f1e61]: EXCEPTEUR OCCAECAT
+                        - heading "EXCEPTEUR OCCAECAT" [level=3] [ref=f1e61]
                         - paragraph [ref=f1e62]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit
             - generic "Carousel buttons":
               - button "Previous" [ref=f1e63] [cursor=pointer]:
@@ -94,7 +94,7 @@
                 - generic [ref=f1e74]:
                   - generic [ref=f1e75]:
                     - link "Hummingbird printed t-shirt" [ref=f1e76] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
                       - img "Hummingbird printed t-shirt" [ref=f1e78]
                     - generic [ref=f1e79]:
                       - link " Quick view" [ref=f1e80] [cursor=pointer]:
@@ -103,13 +103,13 @@
                         - text: Quick view
                       - generic [ref=f1e82]:
                         - link "White" [ref=f1e83] [cursor=pointer]:
-                          - /url: https://educated-vase.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
+                          - /url: https://hysterical-rake.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
                         - link "Black" [ref=f1e84] [cursor=pointer]:
-                          - /url: https://educated-vase.demo.prestashop.com/en/men/1-2-hummingbird-printed-t-shirt.html#/1-size-s/11-color-black
+                          - /url: https://hysterical-rake.demo.prestashop.com/en/men/1-2-hummingbird-printed-t-shirt.html#/1-size-s/11-color-black
                   - generic [ref=f1e85]:
                     - heading "Hummingbird printed t-shirt" [level=3] [ref=f1e86]:
                       - link "Hummingbird printed t-shirt" [ref=f1e87] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
                     - generic [ref=f1e88]:
                       - generic "Regular price" [ref=f1e89]: €23.90
                       - text: €19.12
@@ -121,7 +121,7 @@
                 - generic [ref=f1e95]:
                   - generic [ref=f1e96]:
                     - link "Brown bear printed sweater" [ref=f1e97] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/women/2-9-brown-bear-printed-sweater.html#/1-size-s
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/women/2-9-brown-bear-printed-sweater.html#/1-size-s
                       - img "Brown bear printed sweater" [ref=f1e99]
                     - link " Quick view" [ref=f1e101] [cursor=pointer]:
                       - /url: "#"
@@ -130,7 +130,7 @@
                   - generic [ref=f1e103]:
                     - heading "Hummingbird printed sweater" [level=3] [ref=f1e104]:
                       - link "Hummingbird printed sweater" [ref=f1e105] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/women/2-9-brown-bear-printed-sweater.html#/1-size-s
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/women/2-9-brown-bear-printed-sweater.html#/1-size-s
                     - generic [ref=f1e106]:
                       - generic "Regular price" [ref=f1e107]: €35.90
                       - text: €28.72
@@ -142,7 +142,7 @@
                 - generic [ref=f1e113]:
                   - generic [ref=f1e114]:
                     - link "The best is yet to come' Framed poster" [ref=f1e115] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm
                       - img "The best is yet to come' Framed poster" [ref=f1e117]
                     - link " Quick view" [ref=f1e119] [cursor=pointer]:
                       - /url: "#"
@@ -151,7 +151,7 @@
                   - generic [ref=f1e121]:
                     - heading "The best is yet to come'..." [level=3] [ref=f1e122]:
                       - link "The best is yet to come'..." [ref=f1e123] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm
                     - generic [ref=f1e124]: €29.00
                   - list
                   - button "favorite_border" [ref=f1e125] [cursor=pointer]:
@@ -160,7 +160,7 @@
                 - generic [ref=f1e129]:
                   - generic [ref=f1e130]:
                     - link "The adventure begins Framed poster" [ref=f1e131] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/art/4-16-the-adventure-begins-framed-poster.html#/19-dimension-40x60cm
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/art/4-16-the-adventure-begins-framed-poster.html#/19-dimension-40x60cm
                       - img "The adventure begins Framed poster" [ref=f1e133]
                     - link " Quick view" [ref=f1e135] [cursor=pointer]:
                       - /url: "#"
@@ -169,7 +169,7 @@
                   - generic [ref=f1e137]:
                     - heading "The adventure begins Framed..." [level=3] [ref=f1e138]:
                       - link "The adventure begins Framed..." [ref=f1e139] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/art/4-16-the-adventure-begins-framed-poster.html#/19-dimension-40x60cm
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/art/4-16-the-adventure-begins-framed-poster.html#/19-dimension-40x60cm
                     - generic [ref=f1e140]: €29.00
                   - list
                   - button "favorite_border" [ref=f1e141] [cursor=pointer]:
@@ -178,7 +178,7 @@
                 - generic [ref=f1e145]:
                   - generic [ref=f1e146]:
                     - link "Today is a good day Framed poster" [ref=f1e147] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/art/5-19-today-is-a-good-day-framed-poster.html#/19-dimension-40x60cm
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/art/5-19-today-is-a-good-day-framed-poster.html#/19-dimension-40x60cm
                       - img "Today is a good day Framed poster" [ref=f1e149]
                     - link " Quick view" [ref=f1e151] [cursor=pointer]:
                       - /url: "#"
@@ -187,7 +187,7 @@
                   - generic [ref=f1e153]:
                     - heading "Today is a good day Framed..." [level=3] [ref=f1e154]:
                       - link "Today is a good day Framed..." [ref=f1e155] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/art/5-19-today-is-a-good-day-framed-poster.html#/19-dimension-40x60cm
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/art/5-19-today-is-a-good-day-framed-poster.html#/19-dimension-40x60cm
                     - generic [ref=f1e156]: €29.00
                   - list
                   - button "favorite_border" [ref=f1e157] [cursor=pointer]:
@@ -196,7 +196,7 @@
                 - generic [ref=f1e161]:
                   - generic [ref=f1e162]:
                     - link "Mug The best is yet to come" [ref=f1e163] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/home-accessories/6-mug-the-best-is-yet-to-come.html
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/home-accessories/6-mug-the-best-is-yet-to-come.html
                       - img "Mug The best is yet to come" [ref=f1e165]
                     - link " Quick view" [ref=f1e167] [cursor=pointer]:
                       - /url: "#"
@@ -205,7 +205,7 @@
                   - generic [ref=f1e169]:
                     - heading "Mug The best is yet to come" [level=3] [ref=f1e170]:
                       - link "Mug The best is yet to come" [ref=f1e171] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/home-accessories/6-mug-the-best-is-yet-to-come.html
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/home-accessories/6-mug-the-best-is-yet-to-come.html
                     - generic [ref=f1e172]: €11.90
                   - list
                   - button "favorite_border" [ref=f1e173] [cursor=pointer]:
@@ -214,7 +214,7 @@
                 - generic [ref=f1e177]:
                   - generic [ref=f1e178]:
                     - link "Mug The adventure begins" [ref=f1e179] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/home-accessories/7-mug-the-adventure-begins.html
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/home-accessories/7-mug-the-adventure-begins.html
                       - img "Mug The adventure begins" [ref=f1e181]
                     - link " Quick view" [ref=f1e183] [cursor=pointer]:
                       - /url: "#"
@@ -223,7 +223,7 @@
                   - generic [ref=f1e185]:
                     - heading "Mug The adventure begins" [level=3] [ref=f1e186]:
                       - link "Mug The adventure begins" [ref=f1e187] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/home-accessories/7-mug-the-adventure-begins.html
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/home-accessories/7-mug-the-adventure-begins.html
                     - generic [ref=f1e188]: €11.90
                   - list
                   - button "favorite_border" [ref=f1e189] [cursor=pointer]:
@@ -232,7 +232,7 @@
                 - generic [ref=f1e193]:
                   - generic [ref=f1e194]:
                     - link "Mug Today is a good day" [ref=f1e195] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/home-accessories/8-mug-today-is-a-good-day.html
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/home-accessories/8-mug-today-is-a-good-day.html
                       - img "Mug Today is a good day" [ref=f1e197]
                     - link " Quick view" [ref=f1e199] [cursor=pointer]:
                       - /url: "#"
@@ -241,17 +241,17 @@
                   - generic [ref=f1e201]:
                     - heading "Mug Today is a good day" [level=3] [ref=f1e202]:
                       - link "Mug Today is a good day" [ref=f1e203] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/home-accessories/8-mug-today-is-a-good-day.html
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/home-accessories/8-mug-today-is-a-good-day.html
                     - generic [ref=f1e204]: €11.90
                   - list
                   - button "favorite_border" [ref=f1e205] [cursor=pointer]:
                     - generic [ref=f1e206]: favorite_border
             - link "All products " [ref=f1e207] [cursor=pointer]:
-              - /url: https://educated-vase.demo.prestashop.com/en/2-home
+              - /url: https://hysterical-rake.demo.prestashop.com/en/2-home
               - text: All products
               - generic [ref=f1e208]: 
           - link [ref=f1e209] [cursor=pointer]:
-            - /url: https://educated-vase.demo.prestashop.com/en/
+            - /url: https://hysterical-rake.demo.prestashop.com/en/
           - generic [ref=f1e210]:
             - heading "Custom Text Block" [level=2] [ref=f1e211]
             - paragraph [ref=f1e212]:
@@ -264,7 +264,7 @@
                 - generic [ref=f1e220]:
                   - generic [ref=f1e221]:
                     - link "Brown bear printed sweater" [ref=f1e222] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/women/2-9-brown-bear-printed-sweater.html#/1-size-s
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/women/2-9-brown-bear-printed-sweater.html#/1-size-s
                       - img "Brown bear printed sweater" [ref=f1e224]
                     - link " Quick view" [ref=f1e226] [cursor=pointer]:
                       - /url: "#"
@@ -273,7 +273,7 @@
                   - generic [ref=f1e228]:
                     - heading "Hummingbird printed sweater" [level=3] [ref=f1e229]:
                       - link "Hummingbird printed sweater" [ref=f1e230] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/women/2-9-brown-bear-printed-sweater.html#/1-size-s
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/women/2-9-brown-bear-printed-sweater.html#/1-size-s
                     - generic [ref=f1e231]:
                       - generic "Regular price" [ref=f1e232]: €35.90
                       - text: €28.72
@@ -285,7 +285,7 @@
                 - generic [ref=f1e238]:
                   - generic [ref=f1e239]:
                     - link "Hummingbird printed t-shirt" [ref=f1e240] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
                       - img "Hummingbird printed t-shirt" [ref=f1e242]
                     - generic [ref=f1e243]:
                       - link " Quick view" [ref=f1e244] [cursor=pointer]:
@@ -294,13 +294,13 @@
                         - text: Quick view
                       - generic [ref=f1e246]:
                         - link "White" [ref=f1e247] [cursor=pointer]:
-                          - /url: https://educated-vase.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
+                          - /url: https://hysterical-rake.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
                         - link "Black" [ref=f1e248] [cursor=pointer]:
-                          - /url: https://educated-vase.demo.prestashop.com/en/men/1-2-hummingbird-printed-t-shirt.html#/1-size-s/11-color-black
+                          - /url: https://hysterical-rake.demo.prestashop.com/en/men/1-2-hummingbird-printed-t-shirt.html#/1-size-s/11-color-black
                   - generic [ref=f1e249]:
                     - heading "Hummingbird printed t-shirt" [level=3] [ref=f1e250]:
                       - link "Hummingbird printed t-shirt" [ref=f1e251] [cursor=pointer]:
-                        - /url: https://educated-vase.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
+                        - /url: https://hysterical-rake.demo.prestashop.com/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white
                     - generic [ref=f1e252]:
                       - generic "Regular price" [ref=f1e253]: €23.90
                       - text: €19.12
@@ -309,7 +309,7 @@
                   - button "favorite_border" [ref=f1e255] [cursor=pointer]:
                     - generic [ref=f1e256]: favorite_border
             - link "All sale products " [ref=f1e257] [cursor=pointer]:
-              - /url: https://educated-vase.demo.prestashop.com/en/prices-drop
+              - /url: https://hysterical-rake.demo.prestashop.com/en/prices-drop
               - text: All sale products
               - generic [ref=f1e258]: 
       - generic [ref=f1e259]:
@@ -332,57 +332,57 @@
                 - list [ref=f1e282]:
                   - listitem [ref=f1e283]:
                     - link "Prices drop" [ref=f1e284] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/prices-drop
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/prices-drop
                   - listitem [ref=f1e285]:
                     - link "New products" [ref=f1e286] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/new-products
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/new-products
                   - listitem [ref=f1e287]:
                     - link "Best sellers" [ref=f1e288] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/best-sellers
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/best-sellers
               - generic [ref=f1e289]:
                 - paragraph [ref=f1e290]: Our company
                 - list [ref=f1e291]:
                   - listitem [ref=f1e292]:
                     - link "Delivery" [ref=f1e293] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/content/1-delivery
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/content/1-delivery
                   - listitem [ref=f1e294]:
                     - link "Legal Notice" [ref=f1e295] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/content/2-legal-notice
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/content/2-legal-notice
                   - listitem [ref=f1e296]:
                     - link "Terms and conditions of use" [ref=f1e297] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/content/3-terms-and-conditions-of-use
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/content/3-terms-and-conditions-of-use
                   - listitem [ref=f1e298]:
                     - link "About us" [ref=f1e299] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/content/4-about-us
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/content/4-about-us
                   - listitem [ref=f1e300]:
                     - link "Secure payment" [ref=f1e301] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/content/5-secure-payment
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/content/5-secure-payment
                   - listitem [ref=f1e302]:
                     - link "Contact us" [ref=f1e303] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/contact-us
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/contact-us
                   - listitem [ref=f1e304]:
                     - link "Sitemap" [ref=f1e305] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/sitemap
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/sitemap
                   - listitem [ref=f1e306]:
                     - link "Stores" [ref=f1e307] [cursor=pointer]:
-                      - /url: https://educated-vase.demo.prestashop.com/en/stores
+                      - /url: https://hysterical-rake.demo.prestashop.com/en/stores
             - generic [ref=f1e308]:
               - paragraph [ref=f1e309]:
                 - link "Your account" [ref=f1e310] [cursor=pointer]:
-                  - /url: https://educated-vase.demo.prestashop.com/en/my-account
+                  - /url: https://hysterical-rake.demo.prestashop.com/en/my-account
               - list [ref=f1e311]:
                 - listitem [ref=f1e312]:
                   - link "Order tracking" [ref=f1e313] [cursor=pointer]:
-                    - /url: https://educated-vase.demo.prestashop.com/en/guest-tracking
+                    - /url: https://hysterical-rake.demo.prestashop.com/en/guest-tracking
                 - listitem [ref=f1e314]:
                   - link "Sign in" [ref=f1e315] [cursor=pointer]:
-                    - /url: https://educated-vase.demo.prestashop.com/en/my-account
+                    - /url: https://hysterical-rake.demo.prestashop.com/en/my-account
                 - listitem [ref=f1e316]:
                   - link "Create account" [ref=f1e317] [cursor=pointer]:
-                    - /url: https://educated-vase.demo.prestashop.com/en/registration
+                    - /url: https://hysterical-rake.demo.prestashop.com/en/registration
                 - listitem [ref=f1e318]:
                   - link "My alerts" [ref=f1e319] [cursor=pointer]:
-                    - /url: //educated-vase.demo.prestashop.com/en/module/ps_emailalerts/account
+                    - /url: //hysterical-rake.demo.prestashop.com/en/module/ps_emailalerts/account
             - generic [ref=f1e320]:
               - paragraph [ref=f1e321]: Store information
               - generic [ref=f1e322]:

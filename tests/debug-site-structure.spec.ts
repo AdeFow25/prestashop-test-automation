@@ -99,7 +99,8 @@ test.describe('Debug Site Structure', () => {
           console.log(`Successfully clicked on ${selector}`);
           break;
         } catch (error) {
-          console.log(`Failed to click on ${selector}:`, error.message);
+          const message = error instanceof Error ? error.message : String(error);
+          console.log(`Failed to click on ${selector}:`, message);
         }
       }
     }

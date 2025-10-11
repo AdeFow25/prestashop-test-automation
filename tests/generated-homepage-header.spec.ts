@@ -16,8 +16,8 @@ test('Homepage Load and Header Elements (merged)', async ({ page }) => {
   // ...
 
   // Use iframe-aware selectors for header elements
-  const header = iframeHelper.storeFrame?.locator('header');
-  await expect(header!).toBeVisible();
+  const header = await iframeHelper.getHeaderLocator();
+  await expect(header).toBeVisible();
 
   // Add more generator steps and assertions as needed
 });

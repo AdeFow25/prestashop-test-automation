@@ -1,13 +1,122 @@
-<testsuites id="" name="" tests="51" failures="7" skipped="0" errors="0" time="524.9378810000001">
-<testsuite name="enhanced-checkout-flow.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="5" failures="0" skipped="0" time="47.407" errors="0">
-<testcase name="Enhanced Checkout Flow with Iframe Support › should complete enhanced guest checkout flow" classname="enhanced-checkout-flow.spec.ts" time="8.174">
+<testsuites id="" name="" tests="61" failures="15" skipped="0" errors="0" time="1371.304437">
+<testsuite name="demo-utilities-test.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="3" failures="0" skipped="0" time="23.304" errors="0">
+<testcase name="Demo Utilities Integration Test › should validate demo utilities functionality" classname="demo-utilities-test.spec.ts" time="11.795">
+<system-out>
+<![CDATA[🧪 Testing demo utilities integration...
+🌐 Navigating to PrestaShop demo...
+✅ Successfully navigated to PrestaShop demo
+✅ Navigation utility works
+🔍 Validating demo environment...
+   📄 Title valid: true (PrestaShop Live Demo)
+   🏗️ App container: true
+   🖼️ Iframes found: 4
+   ✨ Environment valid: true
+✅ Environment validation utility works
+⏳ Waiting for demo to be ready...
+✅ Demo is ready for testing
+✅ Demo ready utility works
+🔍 Checking demo limitations...
+⚠️ Demo limitations detected:
+   - Direct product access not available
+   - Direct search access not available
+   - Direct cart access not available
+   - Direct user menu access not available
+✅ Limitations checker works (found 4 limitations)
+✅ Test data generation works
+🎭 Simulating user action: add_to_cart
+   📦 Simulating add to cart...
+   Product: Test Product
+   Quantity: 2
+   ✅ Product would be added to cart
+🎭 Simulating user action: search
+   🔍 Simulating search...
+   Search term: shirt
+   ✅ Search would return results
+🎭 Simulating user action: login
+   👤 Simulating login...
+   Email: test@example.com
+   ✅ User would be logged in
+✅ Action simulation works
+📸 Debug screenshot saved: debug-utility-test-2025-10-11T20-22-10-746Z.png
+✅ Debug screenshot utility works
+🎉 All demo utilities working correctly!
+]]>
+</system-out>
+</testcase>
+<testcase name="Demo Utilities Integration Test › should generate comprehensive test report" classname="demo-utilities-test.spec.ts" time="5.521">
+<system-out>
+<![CDATA[📊 Testing report generation...
+🌐 Navigating to PrestaShop demo...
+✅ Successfully navigated to PrestaShop demo
+📊 Test Report Generated:
+{
+  "timestamp": "2025-10-11T20:22:16.414Z",
+  "environment": "PrestaShop Demo",
+  "url": "https://demo.prestashop.com/#/en/front",
+  "testSummary": {
+    "total": 4,
+    "passed": 2,
+    "failed": 1,
+    "skipped": 1
+  },
+  "testResults": [
+    {
+      "name": "Homepage Load",
+      "status": "passed",
+      "duration": 1200
+    },
+    {
+      "name": "Product Search",
+      "status": "passed",
+      "duration": 850
+    },
+    {
+      "name": "Add to Cart",
+      "status": "failed",
+      "duration": 2100,
+      "error": "Iframe access limited"
+    },
+    {
+      "name": "Checkout Flow",
+      "status": "skipped",
+      "reason": "Demo limitations"
+    }
+  ],
+  "environmentInfo": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.37 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "url": "https://demo.prestashop.com/#/en/front"
+  }
+}
+💾 Report saved to: test-results/demo-test-report-1760214136424.json
+✅ Test report generation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Demo Utilities Integration Test › should handle cleanup properly" classname="demo-utilities-test.spec.ts" time="5.988">
+<system-out>
+<![CDATA[🧹 Testing cleanup functionality...
+🌐 Navigating to PrestaShop demo...
+✅ Successfully navigated to PrestaShop demo
+🧹 Cleaning up test resources...
+✅ Cleanup completed
+✅ Cleanup utility works
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="enhanced-checkout-flow.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="5" failures="0" skipped="0" time="115.35" errors="0">
+<testcase name="Enhanced Checkout Flow with Iframe Support › should complete enhanced guest checkout flow" classname="enhanced-checkout-flow.spec.ts" time="70.375">
 <system-out>
 <![CDATA[🚀 Starting enhanced guest checkout flow...
 ✅ Store iframe initialized with selector: iframe[name="framelive"] (attempt 1)
 ✅ Store iframe initialized
-⚠️ No products found with any selector
-⚠️ No products available to add to cart
-ℹ️ Product addition simulated (iframe limitations)
+✅ Found 10 products using selector: article.product-miniature
+✅ Product added to cart successfully
+✅ Product added to cart successfully
 ⚠️ Could not access shopping cart
 ℹ️ Cart access simulated (iframe limitations)
 📝 Checkout process would continue with:
@@ -20,7 +129,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Enhanced Checkout Flow with Iframe Support › should test product browsing with iframe support" classname="enhanced-checkout-flow.spec.ts" time="14.03">
+<testcase name="Enhanced Checkout Flow with Iframe Support › should test product browsing with iframe support" classname="enhanced-checkout-flow.spec.ts" time="19.995">
 <system-out>
 <![CDATA[🛍️ Testing enhanced product browsing...
 ✅ Store iframe initialized with selector: iframe[name="framelive"] (attempt 1)
@@ -43,23 +152,17 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Enhanced Checkout Flow with Iframe Support › should test user authentication with iframe support" classname="enhanced-checkout-flow.spec.ts" time="7.463">
+<testcase name="Enhanced Checkout Flow with Iframe Support › should test user authentication with iframe support" classname="enhanced-checkout-flow.spec.ts" time="7.201">
 <system-out>
 <![CDATA[👤 Testing enhanced user authentication...
 ✅ Store iframe initialized with selector: iframe[name="framelive"] (attempt 1)
-✅ Accessed authentication area
-✅ Authentication area accessible
-📝 Authentication workflow would include:
-   - Registration form with field validation
-   - Login form with credential validation
-   - Password requirements checking
-   - Email format validation
-   - Terms and conditions acceptance
+⚠️ Could not access authentication
+ℹ️ Authentication testing limited by iframe restrictions
 ✅ Enhanced user authentication testing completed
 ]]>
 </system-out>
 </testcase>
-<testcase name="Enhanced Checkout Flow with Iframe Support › should validate comprehensive store functionality" classname="enhanced-checkout-flow.spec.ts" time="11.957">
+<testcase name="Enhanced Checkout Flow with Iframe Support › should validate comprehensive store functionality" classname="enhanced-checkout-flow.spec.ts" time="12.085">
 <system-out>
 <![CDATA[🏪 Testing comprehensive store functionality...
 ✅ Store iframe initialized with selector: iframe[name="framelive"] (attempt 1)
@@ -77,13 +180,13 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Enhanced Checkout Flow with Iframe Support › should document enhanced testing capabilities" classname="enhanced-checkout-flow.spec.ts" time="5.783">
+<testcase name="Enhanced Checkout Flow with Iframe Support › should document enhanced testing capabilities" classname="enhanced-checkout-flow.spec.ts" time="5.694">
 <system-out>
 <![CDATA[📋 Documenting enhanced testing capabilities...
 Enhanced Testing Framework Capabilities:
 {
   "frameworkVersion": "2.0 - Enhanced Iframe Support",
-  "date": "2025-10-10T10:55:56.532Z",
+  "date": "2025-10-11T20:24:17.917Z",
   "capabilities": [
     {
       "category": "Iframe Integration",
@@ -134,8 +237,8 @@ Enhanced Testing Framework Capabilities:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="error-handling.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="5" failures="0" skipped="0" time="29.258" errors="0">
-<testcase name="Error Handling and Edge Cases (PRESTA-21) › should validate form validation error handling" classname="error-handling.spec.ts" time="5.731">
+<testsuite name="error-handling.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="5" failures="0" skipped="0" time="27.8" errors="0">
+<testcase name="Error Handling and Edge Cases (PRESTA-21) › should validate form validation error handling" classname="error-handling.spec.ts" time="5.173">
 <system-out>
 <![CDATA[Testing form validation error handling...
 ✓ Accessed store for error handling testing
@@ -191,7 +294,7 @@ Form Validation Error Handling Test Scenarios:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Error Handling and Edge Cases (PRESTA-21) › should test browser compatibility and accessibility" classname="error-handling.spec.ts" time="5.935">
+<testcase name="Error Handling and Edge Cases (PRESTA-21) › should test browser compatibility and accessibility" classname="error-handling.spec.ts" time="5.411">
 <system-out>
 <![CDATA[Testing browser compatibility and accessibility...
 Browser Compatibility Test Categories:
@@ -236,7 +339,7 @@ Accessibility Test Points:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Error Handling and Edge Cases (PRESTA-21) › should test edge cases and error scenarios" classname="error-handling.spec.ts" time="5.505">
+<testcase name="Error Handling and Edge Cases (PRESTA-21) › should test edge cases and error scenarios" classname="error-handling.spec.ts" time="6.462">
 <system-out>
 <![CDATA[Testing edge cases and error scenarios...
 Edge Case and Error Scenario Testing:
@@ -292,7 +395,7 @@ Edge Case and Error Scenario Testing:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Error Handling and Edge Cases (PRESTA-21) › should validate error message quality and usability" classname="error-handling.spec.ts" time="5.26">
+<testcase name="Error Handling and Edge Cases (PRESTA-21) › should validate error message quality and usability" classname="error-handling.spec.ts" time="5.444">
 <system-out>
 <![CDATA[Validating error message quality and usability...
 Error Message Quality Criteria:
@@ -332,7 +435,7 @@ Error Message Quality Criteria:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Error Handling and Edge Cases (PRESTA-21) › should document error handling test approach" classname="error-handling.spec.ts" time="6.827">
+<testcase name="Error Handling and Edge Cases (PRESTA-21) › should document error handling test approach" classname="error-handling.spec.ts" time="5.31">
 <system-out>
 <![CDATA[Documenting error handling test approach...
 Error Handling Test Plan:
@@ -404,8 +507,160 @@ Error Handling Test Plan:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="guest-checkout.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="3" failures="3" skipped="0" time="110.563" errors="0">
-<testcase name="Guest Checkout Flow (PRESTA-17) › should complete guest checkout successfully" classname="guest-checkout.spec.ts" time="32.572">
+<testsuite name="generated-category-navigation.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="1" failures="1" skipped="0" time="120.137" errors="0">
+<testcase name="Category Navigation (merged)" classname="generated-category-navigation.spec.ts" time="120.137">
+<failure message="generated-category-navigation.spec.ts:7:5 Category Navigation (merged)" type="FAILURE">
+<![CDATA[  [chromium] › generated-category-navigation.spec.ts:7:5 › Category Navigation (merged) ────────────
+
+    Test timeout of 120000ms exceeded.
+
+    Error: page.waitForTimeout: Test timeout of 120000ms exceeded.
+
+       at ..\utils\prestashop-iframe-helper.ts:40
+
+      38 |         } catch (error) {
+      39 |           console.log(`Retry ${attempt} failed for selector: ${selector}`);
+    > 40 |           await this.page.waitForTimeout(retryDelay);
+         |                           ^
+      41 |         }
+      42 |       }
+      43 |     }
+        at PrestaShopIframeHelper.initializeStoreFrame (C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\utils\prestashop-iframe-helper.ts:40:27)
+        at C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\tests\generated-category-navigation.spec.ts:10:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\generated-category-navigation-Category-Navigation-merged--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Retry 1 failed for selector: iframe[name="framelive"]
+Retry 2 failed for selector: iframe[name="framelive"]
+Retry 3 failed for selector: iframe[name="framelive"]
+Retry 4 failed for selector: iframe[name="framelive"]
+Retry 5 failed for selector: iframe[name="framelive"]
+
+[[ATTACHMENT|generated-category-navigation-Category-Navigation-merged--chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="generated-empty-search.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="1" failures="1" skipped="0" time="120.108" errors="0">
+<testcase name="Empty Search Results (merged)" classname="generated-empty-search.spec.ts" time="120.108">
+<failure message="generated-empty-search.spec.ts:7:5 Empty Search Results (merged)" type="FAILURE">
+<![CDATA[  [chromium] › generated-empty-search.spec.ts:7:5 › Empty Search Results (merged) ──────────────────
+
+    Test timeout of 120000ms exceeded.
+
+    Error: page.waitForTimeout: Test timeout of 120000ms exceeded.
+
+       at ..\utils\prestashop-iframe-helper.ts:40
+
+      38 |         } catch (error) {
+      39 |           console.log(`Retry ${attempt} failed for selector: ${selector}`);
+    > 40 |           await this.page.waitForTimeout(retryDelay);
+         |                           ^
+      41 |         }
+      42 |       }
+      43 |     }
+        at PrestaShopIframeHelper.initializeStoreFrame (C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\utils\prestashop-iframe-helper.ts:40:27)
+        at C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\tests\generated-empty-search.spec.ts:10:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\generated-empty-search-Empty-Search-Results-merged--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Retry 1 failed for selector: iframe[name="framelive"]
+Retry 2 failed for selector: iframe[name="framelive"]
+Retry 3 failed for selector: iframe[name="framelive"]
+Retry 4 failed for selector: iframe[name="framelive"]
+Retry 5 failed for selector: iframe[name="framelive"]
+
+[[ATTACHMENT|generated-empty-search-Empty-Search-Results-merged--chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="generated-homepage-header.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="1" failures="1" skipped="0" time="120.147" errors="0">
+<testcase name="Homepage Load and Header Elements (merged)" classname="generated-homepage-header.spec.ts" time="120.147">
+<failure message="generated-homepage-header.spec.ts:7:5 Homepage Load and Header Elements (merged)" type="FAILURE">
+<![CDATA[  [chromium] › generated-homepage-header.spec.ts:7:5 › Homepage Load and Header Elements (merged) ──
+
+    Test timeout of 120000ms exceeded.
+
+    Error: page.waitForTimeout: Test timeout of 120000ms exceeded.
+
+       at ..\utils\prestashop-iframe-helper.ts:40
+
+      38 |         } catch (error) {
+      39 |           console.log(`Retry ${attempt} failed for selector: ${selector}`);
+    > 40 |           await this.page.waitForTimeout(retryDelay);
+         |                           ^
+      41 |         }
+      42 |       }
+      43 |     }
+        at PrestaShopIframeHelper.initializeStoreFrame (C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\utils\prestashop-iframe-helper.ts:40:27)
+        at C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\tests\generated-homepage-header.spec.ts:10:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\generated-homepage-header--77625-and-Header-Elements-merged--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Retry 1 failed for selector: iframe[name="framelive"]
+Retry 2 failed for selector: iframe[name="framelive"]
+Retry 3 failed for selector: iframe[name="framelive"]
+Retry 4 failed for selector: iframe[name="framelive"]
+Retry 5 failed for selector: iframe[name="framelive"]
+
+[[ATTACHMENT|generated-homepage-header--77625-and-Header-Elements-merged--chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="generated-product-search.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="1" failures="1" skipped="0" time="120.15" errors="0">
+<testcase name="Basic Product Search (merged)" classname="generated-product-search.spec.ts" time="120.15">
+<failure message="generated-product-search.spec.ts:7:5 Basic Product Search (merged)" type="FAILURE">
+<![CDATA[  [chromium] › generated-product-search.spec.ts:7:5 › Basic Product Search (merged) ────────────────
+
+    Test timeout of 120000ms exceeded.
+
+    Error: page.waitForTimeout: Test timeout of 120000ms exceeded.
+
+       at ..\utils\prestashop-iframe-helper.ts:40
+
+      38 |         } catch (error) {
+      39 |           console.log(`Retry ${attempt} failed for selector: ${selector}`);
+    > 40 |           await this.page.waitForTimeout(retryDelay);
+         |                           ^
+      41 |         }
+      42 |       }
+      43 |     }
+        at PrestaShopIframeHelper.initializeStoreFrame (C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\utils\prestashop-iframe-helper.ts:40:27)
+        at C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\tests\generated-product-search.spec.ts:10:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\generated-product-search-Basic-Product-Search-merged--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Retry 1 failed for selector: iframe[name="framelive"]
+Retry 2 failed for selector: iframe[name="framelive"]
+Retry 3 failed for selector: iframe[name="framelive"]
+Retry 4 failed for selector: iframe[name="framelive"]
+Retry 5 failed for selector: iframe[name="framelive"]
+
+[[ATTACHMENT|generated-product-search-Basic-Product-Search-merged--chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="guest-checkout.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="3" failures="3" skipped="0" time="105.293" errors="0">
+<testcase name="Guest Checkout Flow (PRESTA-17) › should complete guest checkout successfully" classname="guest-checkout.spec.ts" time="35.039">
 <failure message="guest-checkout.spec.ts:42:7 should complete guest checkout successfully" type="FAILURE">
 <![CDATA[  [chromium] › guest-checkout.spec.ts:42:7 › Guest Checkout Flow (PRESTA-17) › should complete guest checkout successfully 
 
@@ -440,7 +695,7 @@ Step 1: Adding product to cart...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Guest Checkout Flow (PRESTA-17) › should validate required fields in guest checkout" classname="guest-checkout.spec.ts" time="39.023">
+<testcase name="Guest Checkout Flow (PRESTA-17) › should validate required fields in guest checkout" classname="guest-checkout.spec.ts" time="37.156">
 <failure message="guest-checkout.spec.ts:156:7 should validate required fields in guest checkout" type="FAILURE">
 <![CDATA[  [chromium] › guest-checkout.spec.ts:156:7 › Guest Checkout Flow (PRESTA-17) › should validate required fields in guest checkout 
 
@@ -474,7 +729,7 @@ Step 1: Adding product to cart...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Guest Checkout Flow (PRESTA-17) › should handle invalid email format in guest checkout" classname="guest-checkout.spec.ts" time="38.968">
+<testcase name="Guest Checkout Flow (PRESTA-17) › should handle invalid email format in guest checkout" classname="guest-checkout.spec.ts" time="33.098">
 <failure message="guest-checkout.spec.ts:176:7 should handle invalid email format in guest checkout" type="FAILURE">
 <![CDATA[  [chromium] › guest-checkout.spec.ts:176:7 › Guest Checkout Flow (PRESTA-17) › should handle invalid email format in guest checkout 
 
@@ -509,8 +764,8 @@ Step 1: Adding product to cart...
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="homepage-navigation.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="3" failures="0" skipped="0" time="23.755" errors="0">
-<testcase name="Homepage and Basic Navigation (PRESTA-10) › should load homepage with header elements" classname="homepage-navigation.spec.ts" time="11.055">
+<testsuite name="homepage-navigation.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="3" failures="0" skipped="0" time="20.017" errors="0">
+<testcase name="Homepage and Basic Navigation (PRESTA-10) › should load homepage with header elements" classname="homepage-navigation.spec.ts" time="6.058">
 <system-out>
 <![CDATA[Testing homepage load and header elements...
 ✓ Homepage loads with correct title
@@ -523,7 +778,7 @@ Step 1: Adding product to cart...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Homepage and Basic Navigation (PRESTA-10) › should validate navigation structure" classname="homepage-navigation.spec.ts" time="7.101">
+<testcase name="Homepage and Basic Navigation (PRESTA-10) › should validate navigation structure" classname="homepage-navigation.spec.ts" time="5.859">
 <system-out>
 <![CDATA[Testing navigation structure...
 ✓ Navigation to front office successful
@@ -536,7 +791,7 @@ Step 1: Adding product to cart...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Homepage and Basic Navigation (PRESTA-10) › should document navigation test approach" classname="homepage-navigation.spec.ts" time="5.599">
+<testcase name="Homepage and Basic Navigation (PRESTA-10) › should document navigation test approach" classname="homepage-navigation.spec.ts" time="8.1">
 <system-out>
 <![CDATA[Documenting navigation test approach...
 Navigation Test Coverage:
@@ -552,8 +807,8 @@ Navigation Test Coverage:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="newsletter-footer.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="5" failures="0" skipped="0" time="30.77" errors="0">
-<testcase name="Newsletter and Footer (PRESTA-20) › should validate footer structure and newsletter" classname="newsletter-footer.spec.ts" time="5.859">
+<testsuite name="newsletter-footer.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="5" failures="0" skipped="0" time="34.979" errors="0">
+<testcase name="Newsletter and Footer (PRESTA-20) › should validate footer structure and newsletter" classname="newsletter-footer.spec.ts" time="6.239">
 <system-out>
 <![CDATA[Testing footer structure and newsletter...
 ✓ Accessed store for footer testing
@@ -580,7 +835,7 @@ Expected footer sections:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Newsletter and Footer (PRESTA-20) › should test newsletter subscription workflow" classname="newsletter-footer.spec.ts" time="6.246">
+<testcase name="Newsletter and Footer (PRESTA-20) › should test newsletter subscription workflow" classname="newsletter-footer.spec.ts" time="5.613">
 <system-out>
 <![CDATA[Testing newsletter subscription workflow...
 Newsletter Subscription Test Workflow:
@@ -621,7 +876,7 @@ Newsletter Test Email Scenarios:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Newsletter and Footer (PRESTA-20) › should test footer navigation and links" classname="newsletter-footer.spec.ts" time="6.963">
+<testcase name="Newsletter and Footer (PRESTA-20) › should test footer navigation and links" classname="newsletter-footer.spec.ts" time="5.702">
 <system-out>
 <![CDATA[Testing footer navigation and links...
 Footer Navigation Test Scenarios:
@@ -669,7 +924,7 @@ Footer Navigation Test Scenarios:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Newsletter and Footer (PRESTA-20) › should validate footer responsive behavior" classname="newsletter-footer.spec.ts" time="5.486">
+<testcase name="Newsletter and Footer (PRESTA-20) › should validate footer responsive behavior" classname="newsletter-footer.spec.ts" time="5.622">
 <system-out>
 <![CDATA[Validating footer responsive behavior...
 Expected responsive footer elements:
@@ -688,7 +943,7 @@ Expected mobile footer behavior:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Newsletter and Footer (PRESTA-20) › should document footer and newsletter test approach" classname="newsletter-footer.spec.ts" time="6.216">
+<testcase name="Newsletter and Footer (PRESTA-20) › should document footer and newsletter test approach" classname="newsletter-footer.spec.ts" time="11.803">
 <system-out>
 <![CDATA[Documenting footer and newsletter test approach...
 Footer and Newsletter Test Plan:
@@ -751,8 +1006,8 @@ Footer and Newsletter Test Plan:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="product-details.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="4" failures="0" skipped="0" time="25.586" errors="0">
-<testcase name="Product Detail Pages (PRESTA-14) › should validate product detail page structure" classname="product-details.spec.ts" time="7.039">
+<testsuite name="product-details.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="4" failures="0" skipped="0" time="22.135" errors="0">
+<testcase name="Product Detail Pages (PRESTA-14) › should validate product detail page structure" classname="product-details.spec.ts" time="5.566">
 <system-out>
 <![CDATA[Testing product detail page structure...
 ✓ Accessed store front office
@@ -775,7 +1030,7 @@ Expected image gallery elements:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Detail Pages (PRESTA-14) › should test product variants and options" classname="product-details.spec.ts" time="6.797">
+<testcase name="Product Detail Pages (PRESTA-14) › should test product variants and options" classname="product-details.spec.ts" time="5.324">
 <system-out>
 <![CDATA[Testing product variants and options...
 Product Variant Test Scenarios:
@@ -792,7 +1047,7 @@ Product Variant Test Scenarios:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Detail Pages (PRESTA-14) › should validate add to cart functionality" classname="product-details.spec.ts" time="5.843">
+<testcase name="Product Detail Pages (PRESTA-14) › should validate add to cart functionality" classname="product-details.spec.ts" time="5.732">
 <system-out>
 <![CDATA[Validating add to cart functionality...
 Expected Add to Cart elements:
@@ -811,7 +1066,7 @@ Expected cart update indicators:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Detail Pages (PRESTA-14) › should document product interaction workflow" classname="product-details.spec.ts" time="5.907">
+<testcase name="Product Detail Pages (PRESTA-14) › should document product interaction workflow" classname="product-details.spec.ts" time="5.513">
 <system-out>
 <![CDATA[Documenting product interaction workflow...
 Product Detail Test Workflow:
@@ -847,8 +1102,8 @@ Product Detail Test Workflow:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="product-search.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="4" failures="0" skipped="0" time="23.843" errors="0">
-<testcase name="Product Search (PRESTA-12) › should validate search functionality availability" classname="product-search.spec.ts" time="6.31">
+<testsuite name="product-search.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="4" failures="0" skipped="0" time="22.071" errors="0">
+<testcase name="Product Search (PRESTA-12) › should validate search functionality availability" classname="product-search.spec.ts" time="5.902">
 <system-out>
 <![CDATA[Testing search functionality...
 ✓ Accessed demo front office
@@ -856,7 +1111,7 @@ Product Detail Test Workflow:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Search (PRESTA-12) › should test search scenarios" classname="product-search.spec.ts" time="6.347">
+<testcase name="Product Search (PRESTA-12) › should test search scenarios" classname="product-search.spec.ts" time="5.297">
 <system-out>
 <![CDATA[Testing search scenarios...
 Search Test Scenarios:
@@ -873,7 +1128,7 @@ Search Test Scenarios:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Search (PRESTA-12) › should validate search results structure" classname="product-search.spec.ts" time="5.412">
+<testcase name="Product Search (PRESTA-12) › should validate search results structure" classname="product-search.spec.ts" time="5.308">
 <system-out>
 <![CDATA[Validating search results structure...
 Expected search results elements:
@@ -891,7 +1146,7 @@ Expected product display elements:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Search (PRESTA-12) › should document search test execution approach" classname="product-search.spec.ts" time="5.774">
+<testcase name="Product Search (PRESTA-12) › should document search test execution approach" classname="product-search.spec.ts" time="5.564">
 <system-out>
 <![CDATA[Documenting search test execution...
 Search Test Execution Plan:
@@ -918,8 +1173,8 @@ Search Test Execution Plan:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="registered-user-checkout.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="3" failures="3" skipped="0" time="100.233" errors="0">
-<testcase name="Registered User Checkout (PRESTA-18) › should register new user and complete checkout" classname="registered-user-checkout.spec.ts" time="32.347">
+<testsuite name="registered-user-checkout.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="3" failures="3" skipped="0" time="116.25" errors="0">
+<testcase name="Registered User Checkout (PRESTA-18) › should register new user and complete checkout" classname="registered-user-checkout.spec.ts" time="43.629">
 <failure message="registered-user-checkout.spec.ts:26:7 should register new user and complete checkout" type="FAILURE">
 <![CDATA[  [chromium] › registered-user-checkout.spec.ts:26:7 › Registered User Checkout (PRESTA-18) › should register new user and complete checkout 
 
@@ -953,7 +1208,7 @@ Search Test Execution Plan:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Registered User Checkout (PRESTA-18) › should login existing user and complete checkout" classname="registered-user-checkout.spec.ts" time="33.759">
+<testcase name="Registered User Checkout (PRESTA-18) › should login existing user and complete checkout" classname="registered-user-checkout.spec.ts" time="33.287">
 <failure message="registered-user-checkout.spec.ts:133:7 should login existing user and complete checkout" type="FAILURE">
 <![CDATA[  [chromium] › registered-user-checkout.spec.ts:133:7 › Registered User Checkout (PRESTA-18) › should login existing user and complete checkout 
 
@@ -986,7 +1241,7 @@ Search Test Execution Plan:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Registered User Checkout (PRESTA-18) › should verify order appears in account history" classname="registered-user-checkout.spec.ts" time="34.127">
+<testcase name="Registered User Checkout (PRESTA-18) › should verify order appears in account history" classname="registered-user-checkout.spec.ts" time="39.334">
 <failure message="registered-user-checkout.spec.ts:207:7 should verify order appears in account history" type="FAILURE">
 <![CDATA[  [chromium] › registered-user-checkout.spec.ts:207:7 › Registered User Checkout (PRESTA-18) › should verify order appears in account history 
 
@@ -1020,8 +1275,8 @@ Search Test Execution Plan:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="shopping-cart.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="4" failures="0" skipped="0" time="34.246" errors="0">
-<testcase name="Shopping Cart Management (PRESTA-15) › should validate cart functionality structure" classname="shopping-cart.spec.ts" time="12.306">
+<testsuite name="shopping-cart.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="4" failures="0" skipped="0" time="38.343" errors="0">
+<testcase name="Shopping Cart Management (PRESTA-15) › should validate cart functionality structure" classname="shopping-cart.spec.ts" time="10.906">
 <system-out>
 <![CDATA[Testing cart functionality structure...
 ✓ Accessed store for cart testing
@@ -1042,7 +1297,7 @@ Expected mini-cart elements:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Shopping Cart Management (PRESTA-15) › should test cart operations workflow" classname="shopping-cart.spec.ts" time="5.643">
+<testcase name="Shopping Cart Management (PRESTA-15) › should test cart operations workflow" classname="shopping-cart.spec.ts" time="10.031">
 <system-out>
 <![CDATA[Testing cart operations workflow...
 Cart Operations Test Workflow:
@@ -1081,7 +1336,7 @@ Cart Operations Test Workflow:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Shopping Cart Management (PRESTA-15) › should validate cart page elements" classname="shopping-cart.spec.ts" time="10.515">
+<testcase name="Shopping Cart Management (PRESTA-15) › should validate cart page elements" classname="shopping-cart.spec.ts" time="7.044">
 <system-out>
 <![CDATA[Validating cart page elements...
 Expected cart page structure:
@@ -1109,7 +1364,7 @@ Expected cart total elements:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Shopping Cart Management (PRESTA-15) › should document cart management test approach" classname="shopping-cart.spec.ts" time="5.782">
+<testcase name="Shopping Cart Management (PRESTA-15) › should document cart management test approach" classname="shopping-cart.spec.ts" time="10.362">
 <system-out>
 <![CDATA[Documenting cart management test approach...
 Cart Management Test Plan:
@@ -1155,8 +1410,8 @@ Cart Management Test Plan:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="simplified-checkout.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="5" failures="1" skipped="0" time="32.082" errors="0">
-<testcase name="Simplified Checkout Validation (PRESTA-17) › should validate PrestaShop demo site is accessible" classname="simplified-checkout.spec.ts" time="12.432">
+<testsuite name="simplified-checkout.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="5" failures="1" skipped="0" time="48.888" errors="0">
+<testcase name="Simplified Checkout Validation (PRESTA-17) › should validate PrestaShop demo site is accessible" classname="simplified-checkout.spec.ts" time="18.134">
 <failure message="simplified-checkout.spec.ts:13:7 should validate PrestaShop demo site is accessible" type="FAILURE">
 <![CDATA[  [chromium] › simplified-checkout.spec.ts:13:7 › Simplified Checkout Validation (PRESTA-17) › should validate PrestaShop demo site is accessible 
 
@@ -1200,7 +1455,7 @@ Cart Management Test Plan:
 ]]>
 </system-out>
 </testcase>
-<testcase name="Simplified Checkout Validation (PRESTA-17) › should navigate to front office area" classname="simplified-checkout.spec.ts" time="5.9">
+<testcase name="Simplified Checkout Validation (PRESTA-17) › should navigate to front office area" classname="simplified-checkout.spec.ts" time="8.128">
 <system-out>
 <![CDATA[Step 1: Navigating to front office...
 ✓ Successfully navigated to front office
@@ -1209,7 +1464,7 @@ Found 4 iframes on the page
 ]]>
 </system-out>
 </testcase>
-<testcase name="Simplified Checkout Validation (PRESTA-17) › should validate demo site structure" classname="simplified-checkout.spec.ts" time="5.814">
+<testcase name="Simplified Checkout Validation (PRESTA-17) › should validate demo site structure" classname="simplified-checkout.spec.ts" time="7.805">
 <system-out>
 <![CDATA[Step 1: Analyzing demo site structure...
 Element "iframe": 4 found
@@ -1223,7 +1478,7 @@ Page content loaded successfully
 ]]>
 </system-out>
 </testcase>
-<testcase name="Simplified Checkout Validation (PRESTA-17) › should handle demo limitations gracefully" classname="simplified-checkout.spec.ts" time="5.586">
+<testcase name="Simplified Checkout Validation (PRESTA-17) › should handle demo limitations gracefully" classname="simplified-checkout.spec.ts" time="7.463">
 <system-out>
 <![CDATA[Step 1: Testing demo site limitations...
 Checking for direct product access...
@@ -1233,7 +1488,7 @@ Checking for direct product access...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Simplified Checkout Validation (PRESTA-17) › should document working test approach for future tests" classname="simplified-checkout.spec.ts" time="2.35">
+<testcase name="Simplified Checkout Validation (PRESTA-17) › should document working test approach for future tests" classname="simplified-checkout.spec.ts" time="7.358">
 <system-out>
 <![CDATA[Step 1: Documenting test approach...
 Test Findings:
@@ -1249,8 +1504,89 @@ Test Findings:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="updated-checkout.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="5" failures="0" skipped="0" time="28.713" errors="0">
-<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should validate checkout process is testable" classname="updated-checkout.spec.ts" time="5.579">
+<testsuite name="site-validation.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="3" failures="2" skipped="0" time="85.195" errors="0">
+<testcase name="PrestaShop Demo Validation › should load homepage successfully" classname="site-validation.spec.ts" time="4.305">
+<system-out>
+<![CDATA[🚀 Testing basic site access...
+✅ Homepage loaded successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="PrestaShop Demo Validation › should verify header elements" classname="site-validation.spec.ts" time="16.287">
+<failure message="site-validation.spec.ts:31:7 should verify header elements" type="FAILURE">
+<![CDATA[  [chromium] › site-validation.spec.ts:31:7 › PrestaShop Demo Validation › should verify header elements 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('input[type="search"], .search, #search_widget').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('input[type="search"], .search, #search_widget').first()
+
+
+      37 |     // Check for search box
+      38 |     const searchBox = page.locator('input[type="search"], .search, #search_widget');
+    > 39 |     await expect(searchBox.first()).toBeVisible();
+         |                                     ^
+      40 |     
+      41 |     // Check for cart icon
+      42 |     const cartIcon = page.locator('.cart, .shopping-cart, [data-cart]');
+        at C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\tests\site-validation.spec.ts:39:37
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\site-validation-PrestaShop-fc23c-ould-verify-header-elements-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\site-validation-PrestaShop-fc23c-ould-verify-header-elements-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[🔍 Testing header elements...
+
+[[ATTACHMENT|site-validation-PrestaShop-fc23c-ould-verify-header-elements-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|site-validation-PrestaShop-fc23c-ould-verify-header-elements-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="PrestaShop Demo Validation › should verify products are displayed" classname="site-validation.spec.ts" time="64.603">
+<failure message="site-validation.spec.ts:52:7 should verify products are displayed" type="FAILURE">
+<![CDATA[  [chromium] › site-validation.spec.ts:52:7 › PrestaShop Demo Validation › should verify products are displayed 
+
+    TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.
+
+      54 |     
+      55 |     await page.goto('https://demo.prestashop.com/#/en/front');
+    > 56 |     await page.waitForLoadState('networkidle');
+         |                ^
+      57 |     
+      58 |     // Wait a bit more for dynamic content
+      59 |     await page.waitForTimeout(3000);
+        at C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\tests\site-validation.spec.ts:56:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\site-validation-PrestaShop-42ac0-rify-products-are-displayed-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\site-validation-PrestaShop-42ac0-rify-products-are-displayed-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[🛍️ Testing product display...
+
+[[ATTACHMENT|site-validation-PrestaShop-42ac0-rify-products-are-displayed-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|site-validation-PrestaShop-42ac0-rify-products-are-displayed-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="updated-checkout.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="5" failures="1" skipped="0" time="106.276" errors="0">
+<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should validate checkout process is testable" classname="updated-checkout.spec.ts" time="8.697">
 <system-out>
 <![CDATA[Step 1: Validating checkout test feasibility...
 ✓ Accessed front office demo
@@ -1261,7 +1597,7 @@ Iframe accessibility: Accessible
 ]]>
 </system-out>
 </testcase>
-<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should validate demo environment supports e-commerce testing" classname="updated-checkout.spec.ts" time="5.581">
+<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should validate demo environment supports e-commerce testing" classname="updated-checkout.spec.ts" time="10.706">
 <system-out>
 <![CDATA[Step 1: Validating e-commerce capabilities...
 ✓ PrestaShop demo environment confirmed
@@ -1271,7 +1607,7 @@ Iframe accessibility: Accessible
 ]]>
 </system-out>
 </testcase>
-<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should document test scenarios for manual validation" classname="updated-checkout.spec.ts" time="5.739">
+<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should document test scenarios for manual validation" classname="updated-checkout.spec.ts" time="10.787">
 <system-out>
 <![CDATA[Step 1: Documenting manual test scenarios...
 Manual Test Scenarios for Checkout Process (PRESTA-17):
@@ -1289,27 +1625,37 @@ Manual Test Scenarios for Checkout Process (PRESTA-17):
 ]]>
 </system-out>
 </testcase>
-<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should validate test plan alignment with demo capabilities" classname="updated-checkout.spec.ts" time="5.457">
+<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should validate test plan alignment with demo capabilities" classname="updated-checkout.spec.ts" time="65.139">
+<failure message="updated-checkout.spec.ts:107:7 should validate test plan alignment with demo capabilities" type="FAILURE">
+<![CDATA[  [chromium] › updated-checkout.spec.ts:107:7 › Updated Guest Checkout Flow (PRESTA-17) › should validate test plan alignment with demo capabilities 
+
+    TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.
+
+      14 |     // Navigate to PrestaShop demo front office
+      15 |     await page.goto('https://demo.prestashop.com/#/en/front');
+    > 16 |     await page.waitForLoadState('networkidle');
+         |                ^
+      17 |     await page.waitForTimeout(3000); // Allow SPA to load
+      18 |   });
+      19 |
+        at C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\tests\updated-checkout.spec.ts:16:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\updated-checkout-Updated-G-39ebb-ment-with-demo-capabilities-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\updated-checkout-Updated-G-39ebb-ment-with-demo-capabilities-chromium\error-context.md
+]]>
+</failure>
 <system-out>
-<![CDATA[Step 1: Validating test plan alignment...
-Test Plan Features mapped to Demo Capabilities:
-- Guest Checkout Flow: Requires iframe access or alternative testing approach
-- Registered User Checkout: Requires iframe access or alternative testing approach
-- Shopping Cart Management: Requires iframe access or alternative testing approach
-- Product Browsing: Requires iframe access or alternative testing approach
-- User Registration: Requires iframe access or alternative testing approach
-✓ Demo environment aligns with test plan objectives
-Recommendations for Checkout Testing:
-1. Use iframe navigation for product interactions
-2. Test guest checkout through embedded store
-3. Validate address form functionality in demo mode
-4. Verify payment processing in demo environment
-5. Confirm order completion workflow
-✓ Test plan alignment validated
+<![CDATA[
+[[ATTACHMENT|updated-checkout-Updated-G-39ebb-ment-with-demo-capabilities-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|updated-checkout-Updated-G-39ebb-ment-with-demo-capabilities-chromium\error-context.md]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should provide checkout test execution summary" classname="updated-checkout.spec.ts" time="6.357">
+<testcase name="Updated Guest Checkout Flow (PRESTA-17) › should provide checkout test execution summary" classname="updated-checkout.spec.ts" time="10.947">
 <system-out>
 <![CDATA[Step 1: Providing test execution summary...
 Checkout Test Execution Summary:
@@ -1331,8 +1677,8 @@ Checkout Test Execution Summary:
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="user-authentication.spec.ts" timestamp="2025-10-10T10:55:08.429Z" hostname="chromium" tests="5" failures="0" skipped="0" time="28.679" errors="0">
-<testcase name="User Registration and Authentication (PRESTA-19) › should validate user authentication structure" classname="user-authentication.spec.ts" time="5.669">
+<testsuite name="user-authentication.spec.ts" timestamp="2025-10-11T20:21:56.690Z" hostname="chromium" tests="5" failures="1" skipped="0" time="98.958" errors="0">
+<testcase name="User Registration and Authentication (PRESTA-19) › should validate user authentication structure" classname="user-authentication.spec.ts" time="8.184">
 <system-out>
 <![CDATA[Testing user authentication structure...
 ✓ Accessed store for authentication testing
@@ -1353,7 +1699,7 @@ Expected authentication page elements:
 ]]>
 </system-out>
 </testcase>
-<testcase name="User Registration and Authentication (PRESTA-19) › should test user registration workflow" classname="user-authentication.spec.ts" time="6.184">
+<testcase name="User Registration and Authentication (PRESTA-19) › should test user registration workflow" classname="user-authentication.spec.ts" time="7.368">
 <system-out>
 <![CDATA[Testing user registration workflow...
 User Registration Test Workflow:
@@ -1390,43 +1736,37 @@ Registration Form Fields:
 ]]>
 </system-out>
 </testcase>
-<testcase name="User Registration and Authentication (PRESTA-19) › should test user login workflow" classname="user-authentication.spec.ts" time="6.005">
+<testcase name="User Registration and Authentication (PRESTA-19) › should test user login workflow" classname="user-authentication.spec.ts" time="65.179">
+<failure message="user-authentication.spec.ts:139:7 should test user login workflow" type="FAILURE">
+<![CDATA[  [chromium] › user-authentication.spec.ts:139:7 › User Registration and Authentication (PRESTA-19) › should test user login workflow 
+
+    TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.
+
+      12 |   test.beforeEach(async ({ page }) => {
+      13 |     await page.goto('https://demo.prestashop.com/#/en/front');
+    > 14 |     await page.waitForLoadState('networkidle');
+         |                ^
+      15 |     await page.waitForTimeout(3000);
+      16 |   });
+      17 |
+        at C:\Users\afowo\OneDrive\Documents\Ade\playwright new features\tests\user-authentication.spec.ts:14:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\user-authentication-User-R-675a1-ld-test-user-login-workflow-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\user-authentication-User-R-675a1-ld-test-user-login-workflow-chromium\error-context.md
+]]>
+</failure>
 <system-out>
-<![CDATA[Testing user login workflow...
-User Login Test Workflow:
-1. Access Login Form:
-   1. Click "Sign in" link in header
-   2. Verify login form is displayed
-   3. Check for email and password fields
-   Validation: Login form accessible with proper fields
+<![CDATA[
+[[ATTACHMENT|user-authentication-User-R-675a1-ld-test-user-login-workflow-chromium\test-failed-1.png]]
 
-2. Enter Credentials:
-   1. Enter registered email address
-   2. Enter corresponding password
-   3. Optional: Check "Remember me" if available
-   Validation: Credentials accepted in form fields
-
-3. Submit Login:
-   1. Click "Sign in" or "Login" button
-   2. Wait for authentication process
-   3. Check for successful login redirect
-   4. Verify header shows logged-in state
-   Validation: User successfully authenticated and logged in
-
-Expected login form elements:
-- input[name="email"]
-- input[type="email"]
-- #field-email
-- input[name="password"]
-- input[type="password"]
-- #field-password
-- button[type="submit"]
-- input[type="submit"]
-✓ User login workflow documented
+[[ATTACHMENT|user-authentication-User-R-675a1-ld-test-user-login-workflow-chromium\error-context.md]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="User Registration and Authentication (PRESTA-19) › should validate authentication form validation" classname="user-authentication.spec.ts" time="5.544">
+<testcase name="User Registration and Authentication (PRESTA-19) › should validate authentication form validation" classname="user-authentication.spec.ts" time="10.996">
 <system-out>
 <![CDATA[Validating authentication form validation...
 Authentication Form Validation Scenarios:
@@ -1462,7 +1802,7 @@ Authentication Form Validation Scenarios:
 ]]>
 </system-out>
 </testcase>
-<testcase name="User Registration and Authentication (PRESTA-19) › should document authentication test approach" classname="user-authentication.spec.ts" time="5.277">
+<testcase name="User Registration and Authentication (PRESTA-19) › should document authentication test approach" classname="user-authentication.spec.ts" time="7.231">
 <system-out>
 <![CDATA[Documenting authentication test approach...
 Authentication Test Plan:

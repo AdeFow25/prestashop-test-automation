@@ -11,7 +11,7 @@ npx playwright codegen https://demo.prestashop.com/#/en/front
 
 # Generate with specific browser
 npx playwright codegen --browser=chromium https://demo.prestashop.com/#/en/front
-npx playwright codegen --browser=msedge https://demo.prestashop.com/#/en/front
+npx playwright codegen --browser="Microsoft Edge" https://demo.prestashop.com/#/en/front
 ```
 
 ### 2. Advanced Code Generation
@@ -128,7 +128,7 @@ After generation, enhance the code with:
   "scripts": {
     "codegen": "playwright codegen https://demo.prestashop.com/#/en/front",
     "codegen:chrome": "playwright codegen --browser=chromium https://demo.prestashop.com/#/en/front",
-    "codegen:edge": "playwright codegen --browser=msedge https://demo.prestashop.com/#/en/front",
+   "codegen:edge": "playwright codegen --browser=\"Microsoft Edge\" https://demo.prestashop.com/#/en/front",
     "codegen:mobile": "playwright codegen --device='iPhone 12' https://demo.prestashop.com/#/en/front",
     "codegen:tablet": "playwright codegen --device='iPad Pro' https://demo.prestashop.com/#/en/front"
   }

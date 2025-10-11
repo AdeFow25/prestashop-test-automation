@@ -135,6 +135,281 @@
   },
   "suites": [
     {
+      "title": "demo-utilities-test.spec.ts",
+      "file": "demo-utilities-test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Demo Utilities Integration Test",
+          "file": "demo-utilities-test.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should validate demo utilities functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11795,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🧪 Testing demo utilities integration...\n"
+                        },
+                        {
+                          "text": "🌐 Navigating to PrestaShop demo...\n"
+                        },
+                        {
+                          "text": "✅ Successfully navigated to PrestaShop demo\n"
+                        },
+                        {
+                          "text": "✅ Navigation utility works\n"
+                        },
+                        {
+                          "text": "🔍 Validating demo environment...\n"
+                        },
+                        {
+                          "text": "   📄 Title valid: true (PrestaShop Live Demo)\n"
+                        },
+                        {
+                          "text": "   🏗️ App container: true\n"
+                        },
+                        {
+                          "text": "   🖼️ Iframes found: 4\n"
+                        },
+                        {
+                          "text": "   ✨ Environment valid: true\n"
+                        },
+                        {
+                          "text": "✅ Environment validation utility works\n"
+                        },
+                        {
+                          "text": "⏳ Waiting for demo to be ready...\n"
+                        },
+                        {
+                          "text": "✅ Demo is ready for testing\n"
+                        },
+                        {
+                          "text": "✅ Demo ready utility works\n"
+                        },
+                        {
+                          "text": "🔍 Checking demo limitations...\n"
+                        },
+                        {
+                          "text": "⚠️ Demo limitations detected:\n"
+                        },
+                        {
+                          "text": "   - Direct product access not available\n"
+                        },
+                        {
+                          "text": "   - Direct search access not available\n"
+                        },
+                        {
+                          "text": "   - Direct cart access not available\n"
+                        },
+                        {
+                          "text": "   - Direct user menu access not available\n"
+                        },
+                        {
+                          "text": "✅ Limitations checker works (found 4 limitations)\n"
+                        },
+                        {
+                          "text": "✅ Test data generation works\n"
+                        },
+                        {
+                          "text": "🎭 Simulating user action: add_to_cart\n"
+                        },
+                        {
+                          "text": "   📦 Simulating add to cart...\n"
+                        },
+                        {
+                          "text": "   Product: Test Product\n"
+                        },
+                        {
+                          "text": "   Quantity: 2\n"
+                        },
+                        {
+                          "text": "   ✅ Product would be added to cart\n"
+                        },
+                        {
+                          "text": "🎭 Simulating user action: search\n"
+                        },
+                        {
+                          "text": "   🔍 Simulating search...\n"
+                        },
+                        {
+                          "text": "   Search term: shirt\n"
+                        },
+                        {
+                          "text": "   ✅ Search would return results\n"
+                        },
+                        {
+                          "text": "🎭 Simulating user action: login\n"
+                        },
+                        {
+                          "text": "   👤 Simulating login...\n"
+                        },
+                        {
+                          "text": "   Email: test@example.com\n"
+                        },
+                        {
+                          "text": "   ✅ User would be logged in\n"
+                        },
+                        {
+                          "text": "✅ Action simulation works\n"
+                        },
+                        {
+                          "text": "📸 Debug screenshot saved: debug-utility-test-2025-10-11T20-22-10-746Z.png\n"
+                        },
+                        {
+                          "text": "✅ Debug screenshot utility works\n"
+                        },
+                        {
+                          "text": "🎉 All demo utilities working correctly!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-11T20:21:57.894Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b3f0660814f67ae5bbe-6f7a26c402d899693e4f",
+              "file": "demo-utilities-test.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "should generate comprehensive test report",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5521,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📊 Testing report generation...\n"
+                        },
+                        {
+                          "text": "🌐 Navigating to PrestaShop demo...\n"
+                        },
+                        {
+                          "text": "✅ Successfully navigated to PrestaShop demo\n"
+                        },
+                        {
+                          "text": "📊 Test Report Generated:\n"
+                        },
+                        {
+                          "text": "{\n  \"timestamp\": \"2025-10-11T20:22:16.414Z\",\n  \"environment\": \"PrestaShop Demo\",\n  \"url\": \"https://demo.prestashop.com/#/en/front\",\n  \"testSummary\": {\n    \"total\": 4,\n    \"passed\": 2,\n    \"failed\": 1,\n    \"skipped\": 1\n  },\n  \"testResults\": [\n    {\n      \"name\": \"Homepage Load\",\n      \"status\": \"passed\",\n      \"duration\": 1200\n    },\n    {\n      \"name\": \"Product Search\",\n      \"status\": \"passed\",\n      \"duration\": 850\n    },\n    {\n      \"name\": \"Add to Cart\",\n      \"status\": \"failed\",\n      \"duration\": 2100,\n      \"error\": \"Iframe access limited\"\n    },\n    {\n      \"name\": \"Checkout Flow\",\n      \"status\": \"skipped\",\n      \"reason\": \"Demo limitations\"\n    }\n  ],\n  \"environmentInfo\": {\n    \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.37 Safari/537.36\",\n    \"viewport\": {\n      \"width\": 1280,\n      \"height\": 720\n    },\n    \"url\": \"https://demo.prestashop.com/#/en/front\"\n  }\n}\n"
+                        },
+                        {
+                          "text": "💾 Report saved to: test-results/demo-test-report-1760214136424.json\n"
+                        },
+                        {
+                          "text": "✅ Test report generation works\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-11T20:22:11.051Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b3f0660814f67ae5bbe-20ea62f27e13e067f678",
+              "file": "demo-utilities-test.spec.ts",
+              "line": 56,
+              "column": 7
+            },
+            {
+              "title": "should handle cleanup properly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5988,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🧹 Testing cleanup functionality...\n"
+                        },
+                        {
+                          "text": "🌐 Navigating to PrestaShop demo...\n"
+                        },
+                        {
+                          "text": "✅ Successfully navigated to PrestaShop demo\n"
+                        },
+                        {
+                          "text": "🧹 Cleaning up test resources...\n"
+                        },
+                        {
+                          "text": "✅ Cleanup completed\n"
+                        },
+                        {
+                          "text": "✅ Cleanup utility works\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-11T20:22:16.592Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b3f0660814f67ae5bbe-ffc82631134dd8e8ffed",
+              "file": "demo-utilities-test.spec.ts",
+              "line": 73,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "enhanced-checkout-flow.spec.ts",
       "file": "enhanced-checkout-flow.spec.ts",
       "column": 0,
@@ -163,7 +438,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8174,
+                      "duration": 70375,
                       "errors": [],
                       "stdout": [
                         {
@@ -176,13 +451,13 @@
                           "text": "✅ Store iframe initialized\n"
                         },
                         {
-                          "text": "⚠️ No products found with any selector\n"
+                          "text": "✅ Found 10 products using selector: article.product-miniature\n"
                         },
                         {
-                          "text": "⚠️ No products available to add to cart\n"
+                          "text": "✅ Product added to cart successfully\n"
                         },
                         {
-                          "text": "ℹ️ Product addition simulated (iframe limitations)\n"
+                          "text": "✅ Product added to cart successfully\n"
                         },
                         {
                           "text": "⚠️ Could not access shopping cart\n"
@@ -214,7 +489,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:55:09.241Z",
+                      "startTime": "2025-10-11T20:22:22.612Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -243,7 +518,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 14030,
+                      "duration": 19995,
                       "errors": [],
                       "stdout": [
                         {
@@ -303,7 +578,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:55:17.527Z",
+                      "startTime": "2025-10-11T20:23:33.018Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -332,7 +607,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7463,
+                      "duration": 7201,
                       "errors": [],
                       "stdout": [
                         {
@@ -342,28 +617,10 @@
                           "text": "✅ Store iframe initialized with selector: iframe[name=\"framelive\"] (attempt 1)\n"
                         },
                         {
-                          "text": "✅ Accessed authentication area\n"
+                          "text": "⚠️ Could not access authentication\n"
                         },
                         {
-                          "text": "✅ Authentication area accessible\n"
-                        },
-                        {
-                          "text": "📝 Authentication workflow would include:\n"
-                        },
-                        {
-                          "text": "   - Registration form with field validation\n"
-                        },
-                        {
-                          "text": "   - Login form with credential validation\n"
-                        },
-                        {
-                          "text": "   - Password requirements checking\n"
-                        },
-                        {
-                          "text": "   - Email format validation\n"
-                        },
-                        {
-                          "text": "   - Terms and conditions acceptance\n"
+                          "text": "ℹ️ Authentication testing limited by iframe restrictions\n"
                         },
                         {
                           "text": "✅ Enhanced user authentication testing completed\n"
@@ -371,7 +628,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:55:31.572Z",
+                      "startTime": "2025-10-11T20:23:53.049Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -400,7 +657,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11957,
+                      "duration": 12085,
                       "errors": [],
                       "stdout": [
                         {
@@ -445,7 +702,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:55:39.062Z",
+                      "startTime": "2025-10-11T20:24:00.282Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -474,7 +731,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5783,
+                      "duration": 5694,
                       "errors": [],
                       "stdout": [
                         {
@@ -484,7 +741,7 @@
                           "text": "Enhanced Testing Framework Capabilities:\n"
                         },
                         {
-                          "text": "{\n  \"frameworkVersion\": \"2.0 - Enhanced Iframe Support\",\n  \"date\": \"2025-10-10T10:55:56.532Z\",\n  \"capabilities\": [\n    {\n      \"category\": \"Iframe Integration\",\n      \"features\": [\n        \"Automatic iframe detection and initialization\",\n        \"Cross-frame element interaction\",\n        \"Robust fallback handling for iframe limitations\",\n        \"Smart selector discovery across iframe boundaries\"\n      ]\n    },\n    {\n      \"category\": \"Enhanced Navigation\",\n      \"features\": [\n        \"Category-based navigation within iframe\",\n        \"Product discovery with multiple selector strategies\",\n        \"Search functionality with fallback approaches\",\n        \"Cart and authentication area access\"\n      ]\n    },\n    {\n      \"category\": \"Error Resilience\",\n      \"features\": [\n        \"Graceful degradation when iframe access is limited\",\n        \"Multiple selector strategy for element discovery\",\n        \"Comprehensive error logging and reporting\",\n        \"Fallback simulation when direct interaction fails\"\n      ]\n    },\n    {\n      \"category\": \"Test Coverage\",\n      \"features\": [\n        \"Complete checkout flow testing\",\n        \"Product browsing and search validation\",\n        \"User authentication workflow testing\",\n        \"Comprehensive store functionality validation\"\n      ]\n    }\n  ],\n  \"testResults\": {\n    \"iframeSupport\": \"Implemented and functional\",\n    \"crossFrameInteraction\": \"Working with fallbacks\",\n    \"elementDiscovery\": \"Multi-strategy approach implemented\",\n    \"errorHandling\": \"Comprehensive resilience built-in\"\n  }\n}\n"
+                          "text": "{\n  \"frameworkVersion\": \"2.0 - Enhanced Iframe Support\",\n  \"date\": \"2025-10-11T20:24:17.917Z\",\n  \"capabilities\": [\n    {\n      \"category\": \"Iframe Integration\",\n      \"features\": [\n        \"Automatic iframe detection and initialization\",\n        \"Cross-frame element interaction\",\n        \"Robust fallback handling for iframe limitations\",\n        \"Smart selector discovery across iframe boundaries\"\n      ]\n    },\n    {\n      \"category\": \"Enhanced Navigation\",\n      \"features\": [\n        \"Category-based navigation within iframe\",\n        \"Product discovery with multiple selector strategies\",\n        \"Search functionality with fallback approaches\",\n        \"Cart and authentication area access\"\n      ]\n    },\n    {\n      \"category\": \"Error Resilience\",\n      \"features\": [\n        \"Graceful degradation when iframe access is limited\",\n        \"Multiple selector strategy for element discovery\",\n        \"Comprehensive error logging and reporting\",\n        \"Fallback simulation when direct interaction fails\"\n      ]\n    },\n    {\n      \"category\": \"Test Coverage\",\n      \"features\": [\n        \"Complete checkout flow testing\",\n        \"Product browsing and search validation\",\n        \"User authentication workflow testing\",\n        \"Comprehensive store functionality validation\"\n      ]\n    }\n  ],\n  \"testResults\": {\n    \"iframeSupport\": \"Implemented and functional\",\n    \"crossFrameInteraction\": \"Working with fallbacks\",\n    \"elementDiscovery\": \"Multi-strategy approach implemented\",\n    \"errorHandling\": \"Comprehensive resilience built-in\"\n  }\n}\n"
                         },
                         {
                           "text": "✅ Enhanced testing capabilities documented\n"
@@ -492,7 +749,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:55:51.061Z",
+                      "startTime": "2025-10-11T20:24:12.414Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -538,7 +795,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5731,
+                      "duration": 5173,
                       "errors": [],
                       "stdout": [
                         {
@@ -676,7 +933,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:55:56.906Z",
+                      "startTime": "2025-10-11T20:24:18.208Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -705,7 +962,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5935,
+                      "duration": 5411,
                       "errors": [],
                       "stdout": [
                         {
@@ -822,7 +1079,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:56:02.668Z",
+                      "startTime": "2025-10-11T20:24:23.421Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -851,7 +1108,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5505,
+                      "duration": 6462,
                       "errors": [],
                       "stdout": [
                         {
@@ -995,7 +1252,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:56:08.634Z",
+                      "startTime": "2025-10-11T20:24:28.869Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1024,7 +1281,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5260,
+                      "duration": 5444,
                       "errors": [],
                       "stdout": [
                         {
@@ -1135,7 +1392,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:56:14.167Z",
+                      "startTime": "2025-10-11T20:24:35.382Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1164,7 +1421,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6827,
+                      "duration": 5310,
                       "errors": [],
                       "stdout": [
                         {
@@ -1182,7 +1439,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:56:19.462Z",
+                      "startTime": "2025-10-11T20:24:40.856Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1196,6 +1453,326 @@
               "column": 7
             }
           ]
+        }
+      ]
+    },
+    {
+      "title": "generated-category-navigation.spec.ts",
+      "file": "generated-category-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Category Navigation (merged)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 120137,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\utils\\prestashop-iframe-helper.ts",
+                        "column": 27,
+                        "line": 40
+                      },
+                      "message": "Error: page.waitForTimeout: Test timeout of 120000ms exceeded.\n\n\u001b[90m   at \u001b[39m..\\utils\\prestashop-iframe-helper.ts:40\n\n\u001b[0m \u001b[90m 38 |\u001b[39m         } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 39 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\u001b[32m`Retry ${attempt} failed for selector: ${selector}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m           \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(retryDelay)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m         }\n \u001b[90m 42 |\u001b[39m       }\n \u001b[90m 43 |\u001b[39m     }\u001b[0m\n\u001b[2m    at PrestaShopIframeHelper.initializeStoreFrame (C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\utils\\prestashop-iframe-helper.ts:40:27)\u001b[22m\n\u001b[2m    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\generated-category-navigation.spec.ts:10:23\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Retry 1 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 2 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 3 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 4 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 5 failed for selector: iframe[name=\"framelive\"]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-11T20:24:46.209Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\generated-category-navigation-Category-Navigation-merged--chromium\\test-failed-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5ce4abcd7257bd0e554d-3579fe300aed1fd7c185",
+          "file": "generated-category-navigation.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "generated-empty-search.spec.ts",
+      "file": "generated-empty-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Empty Search Results (merged)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 120108,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\utils\\prestashop-iframe-helper.ts",
+                        "column": 27,
+                        "line": 40
+                      },
+                      "message": "Error: page.waitForTimeout: Test timeout of 120000ms exceeded.\n\n\u001b[90m   at \u001b[39m..\\utils\\prestashop-iframe-helper.ts:40\n\n\u001b[0m \u001b[90m 38 |\u001b[39m         } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 39 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\u001b[32m`Retry ${attempt} failed for selector: ${selector}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m           \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(retryDelay)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m         }\n \u001b[90m 42 |\u001b[39m       }\n \u001b[90m 43 |\u001b[39m     }\u001b[0m\n\u001b[2m    at PrestaShopIframeHelper.initializeStoreFrame (C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\utils\\prestashop-iframe-helper.ts:40:27)\u001b[22m\n\u001b[2m    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\generated-empty-search.spec.ts:10:23\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Retry 1 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 2 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 3 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 4 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 5 failed for selector: iframe[name=\"framelive\"]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-11T20:26:50.150Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\generated-empty-search-Empty-Search-Results-merged--chromium\\test-failed-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "dc678dfa3d3ae03abd06-24c2281ef43ee662112b",
+          "file": "generated-empty-search.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "generated-homepage-header.spec.ts",
+      "file": "generated-homepage-header.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Homepage Load and Header Elements (merged)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 120147,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\utils\\prestashop-iframe-helper.ts",
+                        "column": 27,
+                        "line": 40
+                      },
+                      "message": "Error: page.waitForTimeout: Test timeout of 120000ms exceeded.\n\n\u001b[90m   at \u001b[39m..\\utils\\prestashop-iframe-helper.ts:40\n\n\u001b[0m \u001b[90m 38 |\u001b[39m         } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 39 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\u001b[32m`Retry ${attempt} failed for selector: ${selector}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m           \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(retryDelay)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m         }\n \u001b[90m 42 |\u001b[39m       }\n \u001b[90m 43 |\u001b[39m     }\u001b[0m\n\u001b[2m    at PrestaShopIframeHelper.initializeStoreFrame (C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\utils\\prestashop-iframe-helper.ts:40:27)\u001b[22m\n\u001b[2m    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\generated-homepage-header.spec.ts:10:23\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Retry 1 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 2 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 3 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 4 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 5 failed for selector: iframe[name=\"framelive\"]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-11T20:28:53.422Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\generated-homepage-header--77625-and-Header-Elements-merged--chromium\\test-failed-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "9896b5b3664c6b917e9c-8f26900f899d70be3621",
+          "file": "generated-homepage-header.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "generated-product-search.spec.ts",
+      "file": "generated-product-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Basic Product Search (merged)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 120150,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\utils\\prestashop-iframe-helper.ts",
+                        "column": 27,
+                        "line": 40
+                      },
+                      "message": "Error: page.waitForTimeout: Test timeout of 120000ms exceeded.\n\n\u001b[90m   at \u001b[39m..\\utils\\prestashop-iframe-helper.ts:40\n\n\u001b[0m \u001b[90m 38 |\u001b[39m         } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 39 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\u001b[32m`Retry ${attempt} failed for selector: ${selector}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m           \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(retryDelay)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m         }\n \u001b[90m 42 |\u001b[39m       }\n \u001b[90m 43 |\u001b[39m     }\u001b[0m\n\u001b[2m    at PrestaShopIframeHelper.initializeStoreFrame (C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\utils\\prestashop-iframe-helper.ts:40:27)\u001b[22m\n\u001b[2m    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\generated-product-search.spec.ts:10:23\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Retry 1 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 2 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 3 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 4 failed for selector: iframe[name=\"framelive\"]\n"
+                    },
+                    {
+                      "text": "Retry 5 failed for selector: iframe[name=\"framelive\"]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-11T20:30:54.498Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\generated-product-search-Basic-Product-Search-merged--chromium\\test-failed-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1c559b964464a82eca97-6525d51b46d38df94d76",
+          "file": "generated-product-search.spec.ts",
+          "line": 7,
+          "column": 5
         }
       ]
     },
@@ -1225,10 +1802,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 32572,
+                      "duration": 35039,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.product').first()\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.product').first()\u001b[22m\n\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\guest-checkout.spec.ts:47:44",
@@ -1259,7 +1836,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:56:26.336Z",
+                      "startTime": "2025-10-11T20:32:55.477Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1301,10 +1878,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 39023,
+                      "duration": 37156,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.product').first()\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.product').first()\u001b[22m\n\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\guest-checkout.spec.ts:158:44",
@@ -1332,7 +1909,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:56:59.929Z",
+                      "startTime": "2025-10-11T20:33:31.377Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1374,10 +1951,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 38968,
+                      "duration": 33098,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.product').first()\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.product').first()\u001b[22m\n\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\guest-checkout.spec.ts:178:44",
@@ -1405,7 +1982,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:57:39.953Z",
+                      "startTime": "2025-10-11T20:34:09.355Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1464,10 +2041,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11055,
+                      "duration": 6058,
                       "errors": [],
                       "stdout": [
                         {
@@ -1497,7 +2074,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:58:19.948Z",
+                      "startTime": "2025-10-11T20:34:43.262Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1523,10 +2100,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7101,
+                      "duration": 5859,
                       "errors": [],
                       "stdout": [
                         {
@@ -1556,7 +2133,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:58:31.072Z",
+                      "startTime": "2025-10-11T20:34:49.372Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1582,10 +2159,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5599,
+                      "duration": 8100,
                       "errors": [],
                       "stdout": [
                         {
@@ -1621,7 +2198,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:58:38.229Z",
+                      "startTime": "2025-10-11T20:34:55.241Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1664,10 +2241,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5859,
+                      "duration": 6239,
                       "errors": [],
                       "stdout": [
                         {
@@ -1739,7 +2316,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:58:43.904Z",
+                      "startTime": "2025-10-11T20:35:03.363Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1765,10 +2342,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6246,
+                      "duration": 5613,
                       "errors": [],
                       "stdout": [
                         {
@@ -1870,7 +2447,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:58:49.809Z",
+                      "startTime": "2025-10-11T20:35:09.616Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1896,10 +2473,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6963,
+                      "duration": 5702,
                       "errors": [],
                       "stdout": [
                         {
@@ -2022,7 +2599,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:58:56.089Z",
+                      "startTime": "2025-10-11T20:35:15.240Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2048,10 +2625,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5486,
+                      "duration": 5622,
                       "errors": [],
                       "stdout": [
                         {
@@ -2099,7 +2676,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:03.094Z",
+                      "startTime": "2025-10-11T20:35:20.956Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2125,10 +2702,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6216,
+                      "duration": 11803,
                       "errors": [],
                       "stdout": [
                         {
@@ -2146,7 +2723,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:08.618Z",
+                      "startTime": "2025-10-11T20:35:26.592Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2189,10 +2766,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7039,
+                      "duration": 5566,
                       "errors": [],
                       "stdout": [
                         {
@@ -2252,7 +2829,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:14.888Z",
+                      "startTime": "2025-10-11T20:35:38.419Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2278,10 +2855,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6797,
+                      "duration": 5324,
                       "errors": [],
                       "stdout": [
                         {
@@ -2323,7 +2900,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:21.972Z",
+                      "startTime": "2025-10-11T20:35:44.003Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2349,10 +2926,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5843,
+                      "duration": 5732,
                       "errors": [],
                       "stdout": [
                         {
@@ -2400,7 +2977,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:28.816Z",
+                      "startTime": "2025-10-11T20:35:49.338Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2426,10 +3003,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5907,
+                      "duration": 5513,
                       "errors": [],
                       "stdout": [
                         {
@@ -2447,7 +3024,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:34.705Z",
+                      "startTime": "2025-10-11T20:35:55.082Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2490,10 +3067,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6310,
+                      "duration": 5902,
                       "errors": [],
                       "stdout": [
                         {
@@ -2508,7 +3085,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:40.675Z",
+                      "startTime": "2025-10-11T20:36:00.614Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2534,10 +3111,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6347,
+                      "duration": 5297,
                       "errors": [],
                       "stdout": [
                         {
@@ -2579,7 +3156,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:47.045Z",
+                      "startTime": "2025-10-11T20:36:06.527Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2605,10 +3182,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5412,
+                      "duration": 5308,
                       "errors": [],
                       "stdout": [
                         {
@@ -2653,7 +3230,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:53.446Z",
+                      "startTime": "2025-10-11T20:36:11.837Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2679,10 +3256,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5774,
+                      "duration": 5564,
                       "errors": [],
                       "stdout": [
                         {
@@ -2700,7 +3277,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T10:59:58.888Z",
+                      "startTime": "2025-10-11T20:36:17.161Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2743,10 +3320,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 32347,
+                      "duration": 43629,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Sign in, .user-account')\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Sign in, .user-account')\u001b[22m\n\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\registered-user-checkout.spec.ts:30:55",
@@ -2774,7 +3351,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:00:04.707Z",
+                      "startTime": "2025-10-11T20:36:22.747Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2816,10 +3393,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 8,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 33759,
+                      "duration": 33287,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Sign in')\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Sign in')\u001b[22m\n\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\registered-user-checkout.spec.ts:135:40",
@@ -2843,7 +3420,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:00:37.982Z",
+                      "startTime": "2025-10-11T20:37:07.229Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2885,10 +3462,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 34127,
+                      "duration": 39334,
                       "error": {
                         "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Sign in')\u001b[22m\n",
                         "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Sign in')\u001b[22m\n\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\registered-user-checkout.spec.ts:209:40",
@@ -2912,7 +3489,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:01:12.631Z",
+                      "startTime": "2025-10-11T20:37:41.683Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2971,10 +3548,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12306,
+                      "duration": 10906,
                       "errors": [],
                       "stdout": [
                         {
@@ -3028,7 +3605,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:01:47.625Z",
+                      "startTime": "2025-10-11T20:38:22.232Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3054,10 +3631,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5643,
+                      "duration": 10031,
                       "errors": [],
                       "stdout": [
                         {
@@ -3153,7 +3730,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:01:59.974Z",
+                      "startTime": "2025-10-11T20:38:33.208Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3179,10 +3756,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 10515,
+                      "duration": 7044,
                       "errors": [],
                       "stdout": [
                         {
@@ -3257,7 +3834,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:02:05.632Z",
+                      "startTime": "2025-10-11T20:38:43.259Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3283,10 +3860,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5782,
+                      "duration": 10362,
                       "errors": [],
                       "stdout": [
                         {
@@ -3304,7 +3881,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:02:16.161Z",
+                      "startTime": "2025-10-11T20:38:50.324Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3347,10 +3924,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 12432,
+                      "duration": 18134,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('text=Explore front office')\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Explore front office')\u001b[22m\n\u001b[2m    13 × locator resolved to <span>Explore front office</span>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('text=Explore front office')\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Explore front office')\u001b[22m\n\u001b[2m    13 × locator resolved to <span>Explore front office</span>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\simplified-checkout.spec.ts:26:35",
@@ -3381,7 +3958,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:02:21.956Z",
+                      "startTime": "2025-10-11T20:39:00.710Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3423,10 +4000,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5900,
+                      "duration": 8128,
                       "errors": [],
                       "stdout": [
                         {
@@ -3444,7 +4021,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:02:35.155Z",
+                      "startTime": "2025-10-11T20:39:20.000Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3470,10 +4047,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5814,
+                      "duration": 7805,
                       "errors": [],
                       "stdout": [
                         {
@@ -3506,7 +4083,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:02:41.100Z",
+                      "startTime": "2025-10-11T20:39:28.193Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3532,10 +4109,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5586,
+                      "duration": 7463,
                       "errors": [],
                       "stdout": [
                         {
@@ -3556,7 +4133,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:02:46.925Z",
+                      "startTime": "2025-10-11T20:39:36.016Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3582,10 +4159,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2350,
+                      "duration": 7358,
                       "errors": [],
                       "stdout": [
                         {
@@ -3603,7 +4180,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:02:52.531Z",
+                      "startTime": "2025-10-11T20:39:43.495Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3614,6 +4191,210 @@
               "id": "9c62cb91fc9fd326b1c9-be54108e9f896a8fe95a",
               "file": "simplified-checkout.spec.ts",
               "line": 130,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "site-validation.spec.ts",
+      "file": "site-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "PrestaShop Demo Validation",
+          "file": "site-validation.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load homepage successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4305,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🚀 Testing basic site access...\n"
+                        },
+                        {
+                          "text": "✅ Homepage loaded successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-11T20:39:50.887Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "55c3272ca5c1df16bb4d-c2294ece8556a88962ed",
+              "file": "site-validation.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "should verify header elements",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 16287,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('input[type=\"search\"], .search, #search_widget').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('input[type=\"search\"], .search, #search_widget').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('input[type=\"search\"], .search, #search_widget').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('input[type=\"search\"], .search, #search_widget').first()\u001b[22m\n\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts:39:37",
+                        "location": {
+                          "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts",
+                          "column": 37,
+                          "line": 39
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m     \u001b[90m// Check for search box\u001b[39m\n \u001b[90m 38 |\u001b[39m     \u001b[36mconst\u001b[39m searchBox \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"search\"], .search, #search_widget'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchBox\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m     \n \u001b[90m 41 |\u001b[39m     \u001b[90m// Check for cart icon\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mconst\u001b[39m cartIcon \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart, .shopping-cart, [data-cart]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts",
+                            "column": 37,
+                            "line": 39
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('input[type=\"search\"], .search, #search_widget').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('input[type=\"search\"], .search, #search_widget').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 37 |\u001b[39m     \u001b[90m// Check for search box\u001b[39m\n \u001b[90m 38 |\u001b[39m     \u001b[36mconst\u001b[39m searchBox \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"search\"], .search, #search_widget'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchBox\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m     \n \u001b[90m 41 |\u001b[39m     \u001b[90m// Check for cart icon\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mconst\u001b[39m cartIcon \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart, .shopping-cart, [data-cart]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts:39:37\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔍 Testing header elements...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-11T20:39:55.209Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\site-validation-PrestaShop-fc23c-ould-verify-header-elements-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\site-validation-PrestaShop-fc23c-ould-verify-header-elements-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts",
+                        "column": 37,
+                        "line": 39
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "55c3272ca5c1df16bb4d-2647e126cbb7bc15f6b1",
+              "file": "site-validation.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "should verify products are displayed",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 64603,
+                      "error": {
+                        "message": "TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts:56:16",
+                        "location": {
+                          "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts",
+                          "column": 16,
+                          "line": 56
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 54 |\u001b[39m     \n \u001b[90m 55 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demo.prestashop.com/#/en/front'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m     \n \u001b[90m 58 |\u001b[39m     \u001b[90m// Wait a bit more for dynamic content\u001b[39m\n \u001b[90m 59 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts",
+                            "column": 16,
+                            "line": 56
+                          },
+                          "message": "TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.\n\n\u001b[0m \u001b[90m 54 |\u001b[39m     \n \u001b[90m 55 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demo.prestashop.com/#/en/front'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m     \n \u001b[90m 58 |\u001b[39m     \u001b[90m// Wait a bit more for dynamic content\u001b[39m\n \u001b[90m 59 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts:56:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🛍️ Testing product display...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-11T20:40:12.586Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\site-validation-PrestaShop-42ac0-rify-products-are-displayed-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\site-validation-PrestaShop-42ac0-rify-products-are-displayed-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\site-validation.spec.ts",
+                        "column": 16,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "55c3272ca5c1df16bb4d-40de2fbfa07309199875",
+              "file": "site-validation.spec.ts",
+              "line": 52,
               "column": 7
             }
           ]
@@ -3646,10 +4427,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 13,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5579,
+                      "duration": 8697,
                       "errors": [],
                       "stdout": [
                         {
@@ -3673,7 +4454,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:02:54.895Z",
+                      "startTime": "2025-10-11T20:41:18.428Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3699,10 +4480,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 13,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5581,
+                      "duration": 10706,
                       "errors": [],
                       "stdout": [
                         {
@@ -3723,7 +4504,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:03:00.486Z",
+                      "startTime": "2025-10-11T20:41:27.218Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3749,10 +4530,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 13,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5739,
+                      "duration": 10787,
                       "errors": [],
                       "stdout": [
                         {
@@ -3797,7 +4578,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:03:06.080Z",
+                      "startTime": "2025-10-11T20:41:37.948Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3812,7 +4593,7 @@
             },
             {
               "title": "should validate test plan alignment with demo capabilities",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -3823,66 +4604,55 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 13,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5457,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Step 1: Validating test plan alignment...\n"
+                      "status": "failed",
+                      "duration": 65139,
+                      "error": {
+                        "message": "TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\updated-checkout.spec.ts:16:16",
+                        "location": {
+                          "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\updated-checkout.spec.ts",
+                          "column": 16,
+                          "line": 16
                         },
+                        "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[90m// Navigate to PrestaShop demo front office\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demo.prestashop.com/#/en/front'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// Allow SPA to load\u001b[39m\n \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "Test Plan Features mapped to Demo Capabilities:\n"
-                        },
-                        {
-                          "text": "- Guest Checkout Flow: Requires iframe access or alternative testing approach\n"
-                        },
-                        {
-                          "text": "- Registered User Checkout: Requires iframe access or alternative testing approach\n"
-                        },
-                        {
-                          "text": "- Shopping Cart Management: Requires iframe access or alternative testing approach\n"
-                        },
-                        {
-                          "text": "- Product Browsing: Requires iframe access or alternative testing approach\n"
-                        },
-                        {
-                          "text": "- User Registration: Requires iframe access or alternative testing approach\n"
-                        },
-                        {
-                          "text": "✓ Demo environment aligns with test plan objectives\n"
-                        },
-                        {
-                          "text": "Recommendations for Checkout Testing:\n"
-                        },
-                        {
-                          "text": "1. Use iframe navigation for product interactions\n"
-                        },
-                        {
-                          "text": "2. Test guest checkout through embedded store\n"
-                        },
-                        {
-                          "text": "3. Validate address form functionality in demo mode\n"
-                        },
-                        {
-                          "text": "4. Verify payment processing in demo environment\n"
-                        },
-                        {
-                          "text": "5. Confirm order completion workflow\n"
-                        },
-                        {
-                          "text": "✓ Test plan alignment validated\n"
+                          "location": {
+                            "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\updated-checkout.spec.ts",
+                            "column": 16,
+                            "line": 16
+                          },
+                          "message": "TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.\n\n\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[90m// Navigate to PrestaShop demo front office\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demo.prestashop.com/#/en/front'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// Allow SPA to load\u001b[39m\n \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\updated-checkout.spec.ts:16:16\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:03:11.829Z",
+                      "startTime": "2025-10-11T20:41:48.755Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\updated-checkout-Updated-G-39ebb-ment-with-demo-capabilities-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\updated-checkout-Updated-G-39ebb-ment-with-demo-capabilities-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\updated-checkout.spec.ts",
+                        "column": 16,
+                        "line": 16
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "ac2c37fa15619b0a1d50-6bdd4ab1387cb3de2d24",
@@ -3903,10 +4673,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6357,
+                      "duration": 10947,
                       "errors": [],
                       "stdout": [
                         {
@@ -3924,7 +4694,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:03:17.296Z",
+                      "startTime": "2025-10-11T20:42:55.092Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3967,10 +4737,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5669,
+                      "duration": 8184,
                       "errors": [],
                       "stdout": [
                         {
@@ -4024,7 +4794,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:03:23.670Z",
+                      "startTime": "2025-10-11T20:43:06.119Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4050,10 +4820,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6184,
+                      "duration": 7368,
                       "errors": [],
                       "stdout": [
                         {
@@ -4146,7 +4916,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:03:29.356Z",
+                      "startTime": "2025-10-11T20:43:14.326Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4161,7 +4931,7 @@
             },
             {
               "title": "should test user login workflow",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -4172,105 +4942,55 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 14,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6005,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Testing user login workflow...\n"
+                      "status": "failed",
+                      "duration": 65179,
+                      "error": {
+                        "message": "TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.\n    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\user-authentication.spec.ts:14:16",
+                        "location": {
+                          "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\user-authentication.spec.ts",
+                          "column": 16,
+                          "line": 14
                         },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demo.prestashop.com/#/en/front'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "User Login Test Workflow:\n"
-                        },
-                        {
-                          "text": "1. Access Login Form:\n"
-                        },
-                        {
-                          "text": "   1. Click \"Sign in\" link in header\n"
-                        },
-                        {
-                          "text": "   2. Verify login form is displayed\n"
-                        },
-                        {
-                          "text": "   3. Check for email and password fields\n"
-                        },
-                        {
-                          "text": "   Validation: Login form accessible with proper fields\n\n"
-                        },
-                        {
-                          "text": "2. Enter Credentials:\n"
-                        },
-                        {
-                          "text": "   1. Enter registered email address\n"
-                        },
-                        {
-                          "text": "   2. Enter corresponding password\n"
-                        },
-                        {
-                          "text": "   3. Optional: Check \"Remember me\" if available\n"
-                        },
-                        {
-                          "text": "   Validation: Credentials accepted in form fields\n\n"
-                        },
-                        {
-                          "text": "3. Submit Login:\n"
-                        },
-                        {
-                          "text": "   1. Click \"Sign in\" or \"Login\" button\n"
-                        },
-                        {
-                          "text": "   2. Wait for authentication process\n"
-                        },
-                        {
-                          "text": "   3. Check for successful login redirect\n"
-                        },
-                        {
-                          "text": "   4. Verify header shows logged-in state\n"
-                        },
-                        {
-                          "text": "   Validation: User successfully authenticated and logged in\n\n"
-                        },
-                        {
-                          "text": "Expected login form elements:\n"
-                        },
-                        {
-                          "text": "- input[name=\"email\"]\n"
-                        },
-                        {
-                          "text": "- input[type=\"email\"]\n"
-                        },
-                        {
-                          "text": "- #field-email\n"
-                        },
-                        {
-                          "text": "- input[name=\"password\"]\n"
-                        },
-                        {
-                          "text": "- input[type=\"password\"]\n"
-                        },
-                        {
-                          "text": "- #field-password\n"
-                        },
-                        {
-                          "text": "- button[type=\"submit\"]\n"
-                        },
-                        {
-                          "text": "- input[type=\"submit\"]\n"
-                        },
-                        {
-                          "text": "✓ User login workflow documented\n"
+                          "location": {
+                            "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\user-authentication.spec.ts",
+                            "column": 16,
+                            "line": 14
+                          },
+                          "message": "TimeoutError: page.waitForLoadState: Timeout 60000ms exceeded.\n\n\u001b[0m \u001b[90m 12 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demo.prestashop.com/#/en/front'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\user-authentication.spec.ts:14:16\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:03:35.555Z",
+                      "startTime": "2025-10-11T20:43:21.715Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\user-authentication-User-R-675a1-ld-test-user-login-workflow-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\test-results\\user-authentication-User-R-675a1-ld-test-user-login-workflow-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\afowo\\OneDrive\\Documents\\Ade\\playwright new features\\tests\\user-authentication.spec.ts",
+                        "column": 16,
+                        "line": 14
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "40df8cb7ac66b33c4861-1edb679676afb2b95b61",
@@ -4291,10 +5011,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5544,
+                      "duration": 10996,
                       "errors": [],
                       "stdout": [
                         {
@@ -4381,7 +5101,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:03:41.573Z",
+                      "startTime": "2025-10-11T20:44:27.999Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4407,10 +5127,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5277,
+                      "duration": 7231,
                       "errors": [],
                       "stdout": [
                         {
@@ -4428,7 +5148,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-10T11:03:47.127Z",
+                      "startTime": "2025-10-11T20:44:39.056Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4448,11 +5168,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-10T10:55:07.549Z",
-    "duration": 524937.881,
-    "expected": 44,
+    "startTime": "2025-10-11T20:21:55.048Z",
+    "duration": 1371304.437,
+    "expected": 46,
     "skipped": 0,
-    "unexpected": 7,
+    "unexpected": 15,
     "flaky": 0
   }
 }

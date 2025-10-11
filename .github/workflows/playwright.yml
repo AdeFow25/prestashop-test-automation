@@ -48,18 +48,18 @@ jobs:
       run: npm ci
       
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps chromium msedge
+      run: npx playwright install --with-deps chromium "Microsoft Edge"
       
     - name: Run Playwright tests
       run: |
         if [ "${{ github.event.inputs.test_suite }}" == "enhanced" ]; then
-          npx playwright test tests/enhanced-checkout-flow.spec.ts --project=${{ matrix.browser }}
+          npx playwright test tests/enhanced-checkout-flow.spec.ts --project="${{ matrix.browser }}"
         elif [ "${{ github.event.inputs.test_suite }}" == "core" ]; then
-          npx playwright test tests/homepage-navigation.spec.ts tests/product-search.spec.ts tests/shopping-cart.spec.ts --project=${{ matrix.browser }}
+          npx playwright test tests/homepage-navigation.spec.ts tests/product-search.spec.ts tests/shopping-cart.spec.ts --project="${{ matrix.browser }}"
         elif [ "${{ github.event.inputs.test_suite }}" == "smoke" ]; then
-          npx playwright test tests/site-validation.spec.ts tests/simplified-checkout.spec.ts --project=${{ matrix.browser }}
+          npx playwright test tests/site-validation.spec.ts tests/simplified-checkout.spec.ts --project="${{ matrix.browser }}"
         else
-          npx playwright test --project=${{ matrix.browser }}
+          npx playwright test --project="${{ matrix.browser }}"
         fi
       env:
         CI: true

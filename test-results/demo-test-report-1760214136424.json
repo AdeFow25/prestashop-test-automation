@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-10-11T20:22:16.414Z",
+  "environment": "PrestaShop Demo",
+  "url": "https://demo.prestashop.com/#/en/front",
+  "testSummary": {
+    "total": 4,
+    "passed": 2,
+    "failed": 1,
+    "skipped": 1
+  },
+  "testResults": [
+    {
+      "name": "Homepage Load",
+      "status": "passed",
+      "duration": 1200
+    },
+    {
+      "name": "Product Search",
+      "status": "passed",
+      "duration": 850
+    },
+    {
+      "name": "Add to Cart",
+      "status": "failed",
+      "duration": 2100,
+      "error": "Iframe access limited"
+    },
+    {
+      "name": "Checkout Flow",
+      "status": "skipped",
+      "reason": "Demo limitations"
+    }
+  ],
+  "environmentInfo": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.37 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "url": "https://demo.prestashop.com/#/en/front"
+  }
+}

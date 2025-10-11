@@ -26,7 +26,7 @@ const scenarios = {
   },
   '3': {
     name: 'Edge-specific Recording',
-    command: 'npx playwright codegen --browser=msedge https://demo.prestashop.com/#/en/front'
+  command: 'npx playwright codegen --browser="Microsoft Edge" https://demo.prestashop.com/#/en/front'
   },
   '4': {
     name: 'Mobile Recording (iPhone 12)',
