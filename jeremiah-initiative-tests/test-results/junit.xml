@@ -1,0 +1,161 @@
+<testsuites id="" name="" tests="55" failures="0" skipped="0" errors="0" time="173.158547">
+<testsuite name="01-homepage-real.spec.ts" timestamp="2026-05-05T12:08:25.832Z" hostname="edge" tests="6" failures="0" skipped="0" time="139.117" errors="0">
+<testcase name="1. Homepage Functionality - Real Features › 1.1 Homepage Load" classname="01-homepage-real.spec.ts" time="10.632">
+</testcase>
+<testcase name="1. Homepage Functionality - Real Features › 1.2 Hero Section" classname="01-homepage-real.spec.ts" time="24.591">
+</testcase>
+<testcase name="1. Homepage Functionality - Real Features › 1.3 Navigation Menu" classname="01-homepage-real.spec.ts" time="11.526">
+</testcase>
+<testcase name="1. Homepage Functionality - Real Features › 1.4 Thrive Programs Section" classname="01-homepage-real.spec.ts" time="41.317">
+</testcase>
+<testcase name="1. Homepage Functionality - Real Features › 1.5 Founder Quote Section" classname="01-homepage-real.spec.ts" time="27.84">
+</testcase>
+<testcase name="1. Homepage Functionality - Real Features › 1.6 Footer Navigation" classname="01-homepage-real.spec.ts" time="23.211">
+</testcase>
+</testsuite>
+<testsuite name="02-navigation-real.spec.ts" timestamp="2026-05-05T12:08:25.832Z" hostname="edge" tests="7" failures="0" skipped="0" time="109.859" errors="0">
+<testcase name="2. Navigation &amp; Page Routing - Real Features › 2.1 Navigate to Our Story" classname="02-navigation-real.spec.ts" time="4.926">
+</testcase>
+<testcase name="2. Navigation &amp; Page Routing - Real Features › 2.2 Navigate to Resources" classname="02-navigation-real.spec.ts" time="4.129">
+</testcase>
+<testcase name="2. Navigation &amp; Page Routing - Real Features › 2.3 Navigate to FAQ" classname="02-navigation-real.spec.ts" time="19.052">
+</testcase>
+<testcase name="2. Navigation &amp; Page Routing - Real Features › 2.4 Navigate to Contact" classname="02-navigation-real.spec.ts" time="10.116">
+</testcase>
+<testcase name="2. Navigation &amp; Page Routing - Real Features › 2.5 Thrive Circle Link" classname="02-navigation-real.spec.ts" time="24.691">
+</testcase>
+<testcase name="2. Navigation &amp; Page Routing - Real Features › 2.6 Thrive Classrooms Link" classname="02-navigation-real.spec.ts" time="23.571">
+</testcase>
+<testcase name="2. Navigation &amp; Page Routing - Real Features › 2.7 Thrive Communities Link" classname="02-navigation-real.spec.ts" time="23.374">
+</testcase>
+</testsuite>
+<testsuite name="03-contact-form-real.spec.ts" timestamp="2026-05-05T12:08:25.832Z" hostname="edge" tests="7" failures="0" skipped="0" time="164.324" errors="0">
+<testcase name="3. Contact Form Functionality - Real Features › 3.1 Contact Form Field Presence" classname="03-contact-form-real.spec.ts" time="20.727">
+</testcase>
+<testcase name="3. Contact Form Functionality - Real Features › 3.2 Email Field Validation" classname="03-contact-form-real.spec.ts" time="14.62">
+</testcase>
+<testcase name="3. Contact Form Functionality - Real Features › 3.3 Required Field Validation" classname="03-contact-form-real.spec.ts" time="28.842">
+</testcase>
+<testcase name="3. Contact Form Functionality - Real Features › 3.4 Valid Form Submission" classname="03-contact-form-real.spec.ts" time="22.833">
+</testcase>
+<testcase name="3. Contact Form Functionality - Real Features › 3.5 Message Field Check" classname="03-contact-form-real.spec.ts" time="21.622">
+</testcase>
+<testcase name="3. Contact Form Functionality - Real Features › 3.6 Form Accessibility" classname="03-contact-form-real.spec.ts" time="34.245">
+</testcase>
+<testcase name="3. Contact Form Functionality - Real Features › 3.7 Email Format Validation" classname="03-contact-form-real.spec.ts" time="21.435">
+</testcase>
+</testsuite>
+<testsuite name="04-resources-real.spec.ts" timestamp="2026-05-05T12:08:25.832Z" hostname="edge" tests="5" failures="0" skipped="0" time="63.361" errors="0">
+<testcase name="4. Resources Page - Real Features › 4.1 Resources Page Load" classname="04-resources-real.spec.ts" time="18.422">
+</testcase>
+<testcase name="4. Resources Page - Real Features › 4.2 Resource Categories Display" classname="04-resources-real.spec.ts" time="13.18">
+</testcase>
+<testcase name="4. Resources Page - Real Features › 4.3 External Resource Links" classname="04-resources-real.spec.ts" time="11.324">
+</testcase>
+<testcase name="4. Resources Page - Real Features › 4.4 Screening Tools Links" classname="04-resources-real.spec.ts" time="10.351">
+</testcase>
+<testcase name="4. Resources Page - Real Features › 4.5 Resource Link Security" classname="04-resources-real.spec.ts" time="10.084">
+</testcase>
+</testsuite>
+<testsuite name="05-faq-real.spec.ts" timestamp="2026-05-05T12:08:25.832Z" hostname="edge" tests="5" failures="0" skipped="0" time="30.769" errors="0">
+<testcase name="5. FAQ Page - Real Features › 5.1 FAQ Page Load" classname="05-faq-real.spec.ts" time="9.702">
+</testcase>
+<testcase name="5. FAQ Page - Real Features › 5.2 FAQ Expandable Questions" classname="05-faq-real.spec.ts" time="6.891">
+</testcase>
+<testcase name="5. FAQ Page - Real Features › 5.3 FAQ Content Verification" classname="05-faq-real.spec.ts" time="4.994">
+</testcase>
+<testcase name="5. FAQ Page - Real Features › 5.4 Listening Survey Link" classname="05-faq-real.spec.ts" time="4.613">
+</testcase>
+<testcase name="5. FAQ Page - Real Features › 5.5 FAQ Contact CTA" classname="05-faq-real.spec.ts" time="4.569">
+</testcase>
+</testsuite>
+<testsuite name="06-responsive-real.spec.ts" timestamp="2026-05-05T12:08:25.832Z" hostname="edge" tests="6" failures="0" skipped="0" time="58.689" errors="0">
+<testcase name="6. Responsive Design - Real Features › 6.1 Mobile Layout - Homepage" classname="06-responsive-real.spec.ts" time="12.449">
+</testcase>
+<testcase name="6. Responsive Design - Real Features › 6.2 Tablet Layout" classname="06-responsive-real.spec.ts" time="9.544">
+</testcase>
+<testcase name="6. Responsive Design - Real Features › 6.3 Mobile Navigation" classname="06-responsive-real.spec.ts" time="9.449">
+</testcase>
+<testcase name="6. Responsive Design - Real Features › 6.4 Mobile Forms" classname="06-responsive-real.spec.ts" time="9.534">
+</testcase>
+<testcase name="6. Responsive Design - Real Features › 6.5 Touch Interactions" classname="06-responsive-real.spec.ts" time="9.191">
+</testcase>
+<testcase name="6. Responsive Design - Real Features › 6.6 Image Responsiveness" classname="06-responsive-real.spec.ts" time="8.522">
+</testcase>
+</testsuite>
+<testsuite name="07-accessibility-real.spec.ts" timestamp="2026-05-05T12:08:25.832Z" hostname="edge" tests="6" failures="0" skipped="0" time="163.881" errors="0">
+<testcase name="7. Accessibility - Real Features › 7.1 Keyboard Navigation" classname="07-accessibility-real.spec.ts" time="6.918">
+</testcase>
+<testcase name="7. Accessibility - Real Features › 7.2 Heading Structure" classname="07-accessibility-real.spec.ts" time="67.77">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|07-accessibility-real-7-Ac-5efd9-tures-7-2-Heading-Structure-edge\test-failed-1.png]]
+
+[[ATTACHMENT|07-accessibility-real-7-Ac-5efd9-tures-7-2-Heading-Structure-edge\video.webm]]
+
+[[ATTACHMENT|07-accessibility-real-7-Ac-5efd9-tures-7-2-Heading-Structure-edge\error-context.md]]
+
+[[ATTACHMENT|07-accessibility-real-7-Ac-5efd9-tures-7-2-Heading-Structure-edge-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="7. Accessibility - Real Features › 7.3 Image Alt Text" classname="07-accessibility-real.spec.ts" time="7.732">
+</testcase>
+<testcase name="7. Accessibility - Real Features › 7.4 Link Accessibility" classname="07-accessibility-real.spec.ts" time="8.567">
+</testcase>
+<testcase name="7. Accessibility - Real Features › 7.5 Form Labels" classname="07-accessibility-real.spec.ts" time="66.749">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|07-accessibility-real-7-Ac-092c0-al-Features-7-5-Form-Labels-edge\test-failed-1.png]]
+
+[[ATTACHMENT|07-accessibility-real-7-Ac-092c0-al-Features-7-5-Form-Labels-edge\video.webm]]
+
+[[ATTACHMENT|07-accessibility-real-7-Ac-092c0-al-Features-7-5-Form-Labels-edge\error-context.md]]
+
+[[ATTACHMENT|07-accessibility-real-7-Ac-092c0-al-Features-7-5-Form-Labels-edge-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="7. Accessibility - Real Features › 7.6 Color Contrast" classname="07-accessibility-real.spec.ts" time="6.145">
+</testcase>
+</testsuite>
+<testsuite name="08-performance-real.spec.ts" timestamp="2026-05-05T12:08:25.832Z" hostname="edge" tests="5" failures="0" skipped="0" time="35.362" errors="0">
+<testcase name="8. Performance - Real Features › 8.1 Homepage Load Time" classname="08-performance-real.spec.ts" time="6.337">
+</testcase>
+<testcase name="8. Performance - Real Features › 8.2 Image Optimization" classname="08-performance-real.spec.ts" time="7.526">
+</testcase>
+<testcase name="8. Performance - Real Features › 8.3 Page Weight" classname="08-performance-real.spec.ts" time="7.882">
+</testcase>
+<testcase name="8. Performance - Real Features › 8.4 Resources Page Load" classname="08-performance-real.spec.ts" time="5.963">
+</testcase>
+<testcase name="8. Performance - Real Features › 8.5 Mobile Performance" classname="08-performance-real.spec.ts" time="7.654">
+</testcase>
+</testsuite>
+<testsuite name="09-security-content-real.spec.ts" timestamp="2026-05-05T12:08:25.832Z" hostname="edge" tests="8" failures="0" skipped="0" time="70.524" errors="0">
+<testcase name="9. Content Integrity &amp; Security - Real Features › 9.1 Internal Links Validation" classname="09-security-content-real.spec.ts" time="10.681">
+</testcase>
+<testcase name="9. Content Integrity &amp; Security - Real Features › 9.2 External Links Check" classname="09-security-content-real.spec.ts" time="2.945">
+</testcase>
+<testcase name="9. Content Integrity &amp; Security - Real Features › 9.3 Program Links Verification" classname="09-security-content-real.spec.ts" time="10.669">
+</testcase>
+<testcase name="9. Content Integrity &amp; Security - Real Features › 9.4 Email Link Check" classname="09-security-content-real.spec.ts" time="23.404">
+</testcase>
+<testcase name="9. Content Integrity &amp; Security - Real Features › 9.5 Consistent Navigation" classname="09-security-content-real.spec.ts" time="7.244">
+</testcase>
+<testcase name="9. Content Integrity &amp; Security - Real Features › 9.6 HTTPS Enforcement" classname="09-security-content-real.spec.ts" time="6.704">
+</testcase>
+<testcase name="9. Content Integrity &amp; Security - Real Features › 9.7 External Link Security" classname="09-security-content-real.spec.ts" time="4.462">
+<system-out>
+<![CDATA[External link security: 0/5 links have proper rel attributes
+]]>
+</system-out>
+<system-err>
+<![CDATA[⚠️  SECURITY ISSUE: No external links with target="_blank" have rel="noopener" or "noreferrer" attributes
+⚠️  RECOMMENDATION: Add rel="noopener noreferrer" to external links for security
+]]>
+</system-err>
+</testcase>
+<testcase name="9. Content Integrity &amp; Security - Real Features › 9.8 Form Security" classname="09-security-content-real.spec.ts" time="4.415">
+</testcase>
+</testsuite>
+</testsuites>
